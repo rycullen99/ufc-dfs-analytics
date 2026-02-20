@@ -2,13 +2,13 @@
 Backfill card_position from salary rank within each event.
 
 Salary rank is a strong proxy for card position in MMA DFS:
-  - Highest-salary pair → Main Event (position 1)
-  - 2nd-highest pair → Co-Main (position 2)
-  - Remaining main card → positions 3-5
-  - Prelims → positions 6+
+  - Highest-salary fighters → Main Event (position 1-2)
+  - Next highest → Co-Main (position 3-4)
+  - Remaining high salaries → Main Card (positions 5-10)
+  - Lower salaries → Prelims (positions 11+)
 
-We assign card_position per fight pair (opponent pairs share position),
-then map to card_section labels.
+Since we don't have explicit fight pairing data, we rank all fighters
+by salary within each event date and assign positions accordingly.
 """
 
 import sqlite3
@@ -23,7 +23,7 @@ def infer_card_positions(conn: sqlite3.Connection) -> pd.DataFrame:
     Infer card position for every fighter on every event date.
 
     Returns DataFrame with columns:
-        date_id, player_id, salary, salary_rank, card_position, card_section
+        date_id, player_id, salary, card_position, card_section
     """
     df = pd.read_sql(
         """
@@ -31,8 +31,7 @@ def infer_card_positions(conn: sqlite3.Connection) -> pd.DataFrame:
             c.date_id,
             p.player_id,
             p.full_name,
-            p.salary,
-            p.opponent
+            p.salary
         FROM players p
         JOIN contests c ON p.contest_id = c.contest_id
         WHERE p.salary IS NOT NULL
@@ -46,61 +45,27 @@ def infer_card_positions(conn: sqlite3.Connection) -> pd.DataFrame:
     if df.empty:
         return pd.DataFrame()
 
-    results = []
+    # Deduplicate: keep one row per fighter per date (highest salary if multiple contests)
+    df = df.sort_values(["date_id", "salary"], ascending=[True, False])
+    df = df.drop_duplicates(subset=["date_id", "player_id"], keep="first")
 
-    for date_id, group in df.groupby("date_id"):
-        # Deduplicate: keep one row per fighter per date (highest salary if multiple contests)
-        fighters = group.drop_duplicates(subset=["player_id"]).copy()
-        fighters = fighters.sort_values("salary", ascending=False).reset_index(drop=True)
+    # Rank by salary within each event (1 = highest salary)
+    df["card_position"] = (
+        df.groupby("date_id")["salary"]
+        .rank(method="first", ascending=False)
+        .astype(int)
+    )
 
-        # Pair fighters into fights by matching opponents
-        assigned: set[int] = set()
-        fight_pairs: list[tuple[int, int, float]] = []  # (pid1, pid2, max_salary)
+    # Map position to card section
+    df["card_section"] = df["card_position"].map(CARD_SECTIONS).fillna("prelim")
 
-        name_to_pid = {}
-        for _, row in fighters.iterrows():
-            name_to_pid[row["full_name"]] = row["player_id"]
-
-        for _, row in fighters.iterrows():
-            pid = row["player_id"]
-            if pid in assigned:
-                continue
-
-            opp_name = row["opponent"]
-            opp_pid = name_to_pid.get(opp_name)
-
-            if opp_pid is not None and opp_pid not in assigned:
-                max_sal = max(row["salary"], fighters.loc[fighters["player_id"] == opp_pid, "salary"].iloc[0])
-                fight_pairs.append((pid, opp_pid, max_sal))
-                assigned.add(pid)
-                assigned.add(opp_pid)
-            else:
-                # No matched opponent — assign as solo
-                fight_pairs.append((pid, None, row["salary"]))
-                assigned.add(pid)
-
-        # Sort fights by max salary descending → card position
-        fight_pairs.sort(key=lambda x: x[2], reverse=True)
-
-        for pos_idx, (pid1, pid2, _) in enumerate(fight_pairs, start=1):
-            section = CARD_SECTIONS.get(pos_idx, "prelim")
-            for pid in [pid1, pid2]:
-                if pid is not None:
-                    results.append({
-                        "date_id": date_id,
-                        "player_id": pid,
-                        "card_position": pos_idx,
-                        "card_section": section,
-                    })
-
-    return pd.DataFrame(results)
+    return df[["date_id", "player_id", "card_position", "card_section"]]
 
 
 def backfill_card_position(conn: sqlite3.Connection) -> int:
     """
-    Write card_position and card_section into player_features or a new table.
+    Write card_position and card_section into a fighter_card_position table.
 
-    Creates a `fighter_card_position` table with the inferred positions.
     Returns the number of rows written.
     """
     positions_df = infer_card_positions(conn)
