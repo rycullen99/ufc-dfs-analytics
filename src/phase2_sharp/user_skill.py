@@ -91,9 +91,9 @@ def compute_user_skill(
     SELECT
         lu.username,
         COUNT(*) AS n_entries,
-        SUM(CASE WHEN l.rank <= c.cash_line THEN 1 ELSE 0 END) AS n_cashes
+        SUM(CASE WHEN l.is_cashing = 1 THEN 1 ELSE 0 END) AS n_cashes
     FROM lineup_usernames lu
-    JOIN lineups l ON lu.lineup_id = l.lineup_id
+    JOIN lineups l ON lu.lineup_id = l.id
     JOIN contests c ON l.contest_id = c.contest_id
     WHERE c.contest_id != {FREEROLL_CONTEST_ID}
       {type_filter}

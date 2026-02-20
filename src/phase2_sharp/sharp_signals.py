@@ -56,13 +56,13 @@ def compute_sharp_signals(
         lp.player_id,
         p.full_name,
         lu.username,
-        l.lineup_id,
+        l.id AS lineup_id,
         l.contest_id
     FROM lineup_players lp
-    JOIN lineups l ON lp.lineup_id = l.lineup_id
+    JOIN lineups l ON lp.lineup_id = l.id
     JOIN contests c ON l.contest_id = c.contest_id
     JOIN players p ON lp.player_id = p.player_id AND p.contest_id = c.contest_id
-    JOIN lineup_usernames lu ON l.lineup_id = lu.lineup_id
+    JOIN lineup_usernames lu ON l.id = lu.lineup_id
     WHERE c.contest_id != {FREEROLL_CONTEST_ID}
     """
 

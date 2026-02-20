@@ -96,12 +96,12 @@ def cluster_correlated_features(
     corr = X.corr().abs()
 
     # Convert correlation to distance
-    dist = 1 - corr
-    np.fill_diagonal(dist.values, 0)
+    dist_arr = (1 - corr).values.copy()
+    np.fill_diagonal(dist_arr, 0)
 
     # Ensure symmetry and no negatives
-    dist = dist.clip(lower=0)
-    condensed = squareform(dist.values)
+    dist_arr = np.clip(dist_arr, 0, None)
+    condensed = squareform(dist_arr)
 
     Z = linkage(condensed, method="single")
     labels = fcluster(Z, t=1 - threshold, criterion="distance")
