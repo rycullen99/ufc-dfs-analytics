@@ -1,0 +1,34 @@
+{
+  "holdout_n_events": 10,
+  "holdout_n_samples": 964,
+  "dev_n_events": 122,
+  "dev_n_samples": 11441,
+  "cv_results": {
+    "ridge": {
+      "mean_mae": 5.648290868040341,
+      "n_folds": 102
+    },
+    "random_forest": {
+      "mean_mae": 4.269692380347294,
+      "n_folds": 102
+    },
+    "lightgbm": {
+      "mean_mae": 4.399078902988391,
+      "n_folds": 102
+    }
+  },
+  "holdout_mae": 5.713888116525952,
+  "holdout_mae_ci": [
+    5.202332037052837,
+    6.145520076987847
+  ],
+  "holdout_rmse": 9.555638527837194,
+  "holdout_rmse_ci": [
+    8.856706294884,
+    10.237161927323863
+  ],
+  "calibration_slope": 0.9069210108004686,
+  "calibration_intercept": 3.2269191918023914,
+  "ece": 1.6068913417688946,
+  "leakage_check": "PASSED"
+}
