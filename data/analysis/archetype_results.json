@@ -1,0 +1,1520 @@
+{
+  "UNLIMITED": {
+    "n_contests": 358,
+    "n_lineups": 2278873,
+    "ownership_roi": {
+      "<100%": {
+        "roi": 0.7385,
+        "n_lineups": 371533,
+        "cash_rate": 0.1586,
+        "avg_points": 167.51
+      },
+      "100-125%": {
+        "roi": 1.5283,
+        "n_lineups": 411932,
+        "cash_rate": 0.2281,
+        "avg_points": 242.75
+      },
+      "125-150%": {
+        "roi": 1.3102,
+        "n_lineups": 583279,
+        "cash_rate": 0.2418,
+        "avg_points": 297.35
+      },
+      "150-175%": {
+        "roi": 1.2154,
+        "n_lineups": 553555,
+        "cash_rate": 0.2462,
+        "avg_points": 328.27
+      },
+      "175-200%": {
+        "roi": 1.1445,
+        "n_lineups": 274466,
+        "cash_rate": 0.2495,
+        "avg_points": 343.49
+      },
+      "200%+": {
+        "roi": 1.5442,
+        "n_lineups": 84004,
+        "cash_rate": 0.2607,
+        "avg_points": 366.28
+      }
+    },
+    "salary_remaining_roi": {
+      "<$500": {
+        "roi": 1.8407,
+        "n_lineups": 738974,
+        "cash_rate": 0.2689,
+        "avg_points": 353.1
+      },
+      "$500-999": {
+        "roi": 1.3079,
+        "n_lineups": 237242,
+        "cash_rate": 0.2438,
+        "avg_points": 345.79
+      },
+      "$1K-2K": {
+        "roi": 1.3899,
+        "n_lineups": 153587,
+        "cash_rate": 0.2161,
+        "avg_points": 335.81
+      },
+      "$2K+": {
+        "roi": 0.784,
+        "n_lineups": 1149070,
+        "cash_rate": 0.2009,
+        "avg_points": 215.73
+      }
+    },
+    "salary_spread_roi": {
+      "<$1K": {
+        "roi": 0.355,
+        "n_lineups": 103377,
+        "cash_rate": 0.1171,
+        "avg_points": 160.67
+      },
+      "$1K-2K": {
+        "roi": 1.0677,
+        "n_lineups": 890996,
+        "cash_rate": 0.2214,
+        "avg_points": 265.74
+      },
+      "$2K-3K": {
+        "roi": 1.4011,
+        "n_lineups": 1263291,
+        "cash_rate": 0.2417,
+        "avg_points": 302.65
+      },
+      "$3K-4K": {
+        "roi": 1.27,
+        "n_lineups": 21105,
+        "cash_rate": 0.2762,
+        "avg_points": 318.41
+      },
+      "$4K-5K": {
+        "roi": null,
+        "n_lineups": 0,
+        "cash_rate": null,
+        "avg_points": null
+      },
+      "$5K+": {
+        "roi": null,
+        "n_lineups": 0,
+        "cash_rate": null,
+        "avg_points": null
+      }
+    },
+    "min_ownership_roi": {
+      "0-2%": {
+        "roi": 0.1891,
+        "n_lineups": 19808,
+        "cash_rate": 0.0892,
+        "avg_points": 248.05
+      },
+      "2-5%": {
+        "roi": 1.3684,
+        "n_lineups": 67386,
+        "cash_rate": 0.1814,
+        "avg_points": 253.24
+      },
+      "5-8%": {
+        "roi": 1.5731,
+        "n_lineups": 229029,
+        "cash_rate": 0.2232,
+        "avg_points": 302.56
+      },
+      "8-12%": {
+        "roi": 1.3358,
+        "n_lineups": 586556,
+        "cash_rate": 0.2347,
+        "avg_points": 285.55
+      },
+      "12-18%": {
+        "roi": 1.2785,
+        "n_lineups": 914938,
+        "cash_rate": 0.2389,
+        "avg_points": 284.25
+      },
+      "18%+": {
+        "roi": 0.8138,
+        "n_lineups": 461156,
+        "cash_rate": 0.2152,
+        "avg_points": 268.0
+      }
+    },
+    "max_ownership_roi": {
+      "<20%": {
+        "roi": 0.363,
+        "n_lineups": 15591,
+        "cash_rate": 0.1129,
+        "avg_points": 136.26
+      },
+      "20-30%": {
+        "roi": 1.9198,
+        "n_lineups": 240303,
+        "cash_rate": 0.2457,
+        "avg_points": 238.77
+      },
+      "30-40%": {
+        "roi": 1.2841,
+        "n_lineups": 716660,
+        "cash_rate": 0.2277,
+        "avg_points": 274.93
+      },
+      "40-50%": {
+        "roi": 1.1362,
+        "n_lineups": 760741,
+        "cash_rate": 0.2308,
+        "avg_points": 297.27
+      },
+      "50-60%": {
+        "roi": 0.9818,
+        "n_lineups": 432630,
+        "cash_rate": 0.2221,
+        "avg_points": 282.91
+      },
+      "60%+": {
+        "roi": 0.9607,
+        "n_lineups": 112844,
+        "cash_rate": 0.2211,
+        "avg_points": 331.08
+      }
+    },
+    "lineup_count_roi": {
+      "1 (unique)": {
+        "roi": 1.4606,
+        "n_lineups": 1123093,
+        "cash_rate": 0.2225,
+        "avg_points": 286.8
+      },
+      "2-5": {
+        "roi": 1.0703,
+        "n_lineups": 763629,
+        "cash_rate": 0.2354,
+        "avg_points": 283.09
+      },
+      "6-20": {
+        "roi": 0.8891,
+        "n_lineups": 305980,
+        "cash_rate": 0.2355,
+        "avg_points": 271.0
+      },
+      "21-100": {
+        "roi": 0.6529,
+        "n_lineups": 80689,
+        "cash_rate": 0.2207,
+        "avg_points": 249.12
+      },
+      "101+": {
+        "roi": 0.426,
+        "n_lineups": 5482,
+        "cash_rate": 0.1901,
+        "avg_points": 206.19
+      }
+    },
+    "high_salary_count_roi": {
+      "0.0": {
+        "roi": 0.1806,
+        "n_lineups": 79227,
+        "cash_rate": 0.0867,
+        "avg_points": 143.67
+      },
+      "1.0": {
+        "roi": 0.6663,
+        "n_lineups": 368481,
+        "cash_rate": 0.1586,
+        "avg_points": 196.48
+      },
+      "2.0": {
+        "roi": 1.0412,
+        "n_lineups": 874613,
+        "cash_rate": 0.2365,
+        "avg_points": 278.74
+      },
+      "3.0": {
+        "roi": 1.679,
+        "n_lineups": 847499,
+        "cash_rate": 0.2617,
+        "avg_points": 327.41
+      },
+      "4.0": {
+        "roi": 1.758,
+        "n_lineups": 108850,
+        "cash_rate": 0.2443,
+        "avg_points": 343.13
+      },
+      "5.0": {
+        "roi": 0.4032,
+        "n_lineups": 99,
+        "cash_rate": 0.1919,
+        "avg_points": 366.42
+      }
+    },
+    "favorite_count_roi": {
+      "0": {
+        "roi": 1.2607,
+        "n_lineups": 1394057,
+        "cash_rate": 0.223,
+        "avg_points": 268.88
+      },
+      "1": {
+        "roi": 1.2064,
+        "n_lineups": 156479,
+        "cash_rate": 0.2304,
+        "avg_points": 240.71
+      },
+      "2": {
+        "roi": 0.887,
+        "n_lineups": 191182,
+        "cash_rate": 0.2094,
+        "avg_points": 254.19
+      },
+      "3": {
+        "roi": 1.2702,
+        "n_lineups": 303740,
+        "cash_rate": 0.2558,
+        "avg_points": 326.61
+      },
+      "4": {
+        "roi": 1.193,
+        "n_lineups": 206130,
+        "cash_rate": 0.2431,
+        "avg_points": 351.11
+      },
+      "5": {
+        "roi": 1.3832,
+        "n_lineups": 26937,
+        "cash_rate": 0.2171,
+        "avg_points": 357.52
+      },
+      "6": {
+        "roi": 0.2337,
+        "n_lineups": 348,
+        "cash_rate": 0.1351,
+        "avg_points": 342.14
+      }
+    },
+    "scoring_thresholds": {
+      "avg_points": 281.91,
+      "cash_line_points": 330.72,
+      "top_5pct_points": 413.11,
+      "top_1pct_points": 469.62,
+      "winner_points": 555.6,
+      "n_contests": 358
+    },
+    "sub_splits": {
+      "by_fee_tier": {
+        "HIGH ($25-30)": {
+          "roi": 1.4673,
+          "n_lineups": 331218,
+          "n_contests": 45,
+          "cash_rate": 0.221,
+          "avg_points": 282.52
+        },
+        "LOW ($5-8)": {
+          "roi": 1.0905,
+          "n_lineups": 325293,
+          "n_contests": 87,
+          "cash_rate": 0.2464,
+          "avg_points": 246.91
+        },
+        "MICRO ($1-3)": {
+          "roi": 1.1806,
+          "n_lineups": 1062421,
+          "n_contests": 127,
+          "cash_rate": 0.2317,
+          "avg_points": 281.84
+        },
+        "MID ($15-20)": {
+          "roi": 1.2319,
+          "n_lineups": 559941,
+          "n_contests": 99,
+          "cash_rate": 0.2161,
+          "avg_points": 302.0
+        }
+      },
+      "by_field_bucket": {
+        "Large (20K-50K)": {
+          "roi": 1.2868,
+          "n_lineups": 1302126,
+          "n_contests": 191,
+          "cash_rate": 0.2256,
+          "avg_points": 287.52
+        },
+        "Medium (5K-20K)": {
+          "roi": 1.0952,
+          "n_lineups": 446285,
+          "n_contests": 110,
+          "cash_rate": 0.2392,
+          "avg_points": 269.14
+        },
+        "Mega (50K+)": {
+          "roi": 1.1721,
+          "n_lineups": 508189,
+          "n_contests": 46,
+          "cash_rate": 0.2267,
+          "avg_points": 278.35
+        },
+        "Small (<5K)": {
+          "roi": 1.1144,
+          "n_lineups": 22273,
+          "n_contests": 11,
+          "cash_rate": 0.2187,
+          "avg_points": 290.82
+        }
+      }
+    }
+  },
+  "LIMITED": {
+    "n_contests": 131,
+    "n_lineups": 28946,
+    "ownership_roi": {
+      "<100%": {
+        "roi": 0.4108,
+        "n_lineups": 3721,
+        "cash_rate": 0.1016,
+        "avg_points": 137.56
+      },
+      "100-125%": {
+        "roi": 0.9392,
+        "n_lineups": 3263,
+        "cash_rate": 0.1802,
+        "avg_points": 191.45
+      },
+      "125-150%": {
+        "roi": 0.9807,
+        "n_lineups": 4165,
+        "cash_rate": 0.2019,
+        "avg_points": 233.15
+      },
+      "150-175%": {
+        "roi": 1.0681,
+        "n_lineups": 4990,
+        "cash_rate": 0.2311,
+        "avg_points": 284.6
+      },
+      "175-200%": {
+        "roi": 1.3107,
+        "n_lineups": 5328,
+        "cash_rate": 0.2487,
+        "avg_points": 321.67
+      },
+      "200%+": {
+        "roi": 1.1151,
+        "n_lineups": 7471,
+        "cash_rate": 0.2413,
+        "avg_points": 353.17
+      }
+    },
+    "salary_remaining_roi": {
+      "<$500": {
+        "roi": 1.4068,
+        "n_lineups": 11617,
+        "cash_rate": 0.2554,
+        "avg_points": 363.82
+      },
+      "$500-999": {
+        "roi": 1.3077,
+        "n_lineups": 547,
+        "cash_rate": 0.2212,
+        "avg_points": 368.32
+      },
+      "$1K-2K": {
+        "roi": 0.4086,
+        "n_lineups": 142,
+        "cash_rate": 0.1549,
+        "avg_points": 353.89
+      },
+      "$2K+": {
+        "roi": 0.7335,
+        "n_lineups": 16640,
+        "cash_rate": 0.179,
+        "avg_points": 204.44
+      }
+    },
+    "salary_spread_roi": {
+      "<$1K": {
+        "roi": 0.3531,
+        "n_lineups": 2401,
+        "cash_rate": 0.1095,
+        "avg_points": 146.47
+      },
+      "$1K-2K": {
+        "roi": 0.9787,
+        "n_lineups": 10695,
+        "cash_rate": 0.2054,
+        "avg_points": 226.82
+      },
+      "$2K-3K": {
+        "roi": 1.2475,
+        "n_lineups": 10168,
+        "cash_rate": 0.2402,
+        "avg_points": 283.51
+      },
+      "$3K-4K": {
+        "roi": 1.4275,
+        "n_lineups": 182,
+        "cash_rate": 0.2912,
+        "avg_points": 319.23
+      },
+      "$4K-5K": {
+        "roi": null,
+        "n_lineups": 0,
+        "cash_rate": null,
+        "avg_points": null
+      },
+      "$5K+": {
+        "roi": null,
+        "n_lineups": 0,
+        "cash_rate": null,
+        "avg_points": null
+      }
+    },
+    "min_ownership_roi": {
+      "0-2%": {
+        "roi": 0.3016,
+        "n_lineups": 46,
+        "cash_rate": 0.1304,
+        "avg_points": 348.65
+      },
+      "2-5%": {
+        "roi": 0.8678,
+        "n_lineups": 329,
+        "cash_rate": 0.1884,
+        "avg_points": 383.6
+      },
+      "5-8%": {
+        "roi": 0.7836,
+        "n_lineups": 678,
+        "cash_rate": 0.1549,
+        "avg_points": 394.18
+      },
+      "8-12%": {
+        "roi": 1.053,
+        "n_lineups": 1253,
+        "cash_rate": 0.2091,
+        "avg_points": 382.88
+      },
+      "12-18%": {
+        "roi": 0.9214,
+        "n_lineups": 1765,
+        "cash_rate": 0.2147,
+        "avg_points": 402.51
+      },
+      "18%+": {
+        "roi": 0.9048,
+        "n_lineups": 1421,
+        "cash_rate": 0.2245,
+        "avg_points": 395.58
+      }
+    },
+    "max_ownership_roi": {
+      "<20%": {
+        "roi": 0.0,
+        "n_lineups": 2,
+        "cash_rate": 0.0,
+        "avg_points": 324.58
+      },
+      "20-30%": {
+        "roi": 0.2888,
+        "n_lineups": 34,
+        "cash_rate": 0.1471,
+        "avg_points": 348.53
+      },
+      "30-40%": {
+        "roi": 0.6435,
+        "n_lineups": 288,
+        "cash_rate": 0.2396,
+        "avg_points": 388.23
+      },
+      "40-50%": {
+        "roi": 0.9367,
+        "n_lineups": 1485,
+        "cash_rate": 0.2013,
+        "avg_points": 374.82
+      },
+      "50-60%": {
+        "roi": 0.9655,
+        "n_lineups": 2140,
+        "cash_rate": 0.2182,
+        "avg_points": 400.2
+      },
+      "60%+": {
+        "roi": 0.9136,
+        "n_lineups": 1543,
+        "cash_rate": 0.1899,
+        "avg_points": 404.71
+      }
+    },
+    "lineup_count_roi": {
+      "1 (unique)": {
+        "roi": 1.0133,
+        "n_lineups": 27978,
+        "cash_rate": 0.2088,
+        "avg_points": 267.49
+      },
+      "2-5": {
+        "roi": 1.0114,
+        "n_lineups": 938,
+        "cash_rate": 0.2527,
+        "avg_points": 409.06
+      },
+      "6-20": {
+        "roi": 0.7658,
+        "n_lineups": 30,
+        "cash_rate": 0.2667,
+        "avg_points": 417.78
+      },
+      "21-100": {
+        "roi": null,
+        "n_lineups": 0,
+        "cash_rate": null,
+        "avg_points": null
+      },
+      "101+": {
+        "roi": null,
+        "n_lineups": 0,
+        "cash_rate": null,
+        "avg_points": null
+      }
+    },
+    "high_salary_count_roi": {
+      "0.0": {
+        "roi": 0.1543,
+        "n_lineups": 1179,
+        "cash_rate": 0.0636,
+        "avg_points": 112.03
+      },
+      "1.0": {
+        "roi": 0.3938,
+        "n_lineups": 5058,
+        "cash_rate": 0.1281,
+        "avg_points": 163.41
+      },
+      "2.0": {
+        "roi": 0.9659,
+        "n_lineups": 8749,
+        "cash_rate": 0.2149,
+        "avg_points": 238.74
+      },
+      "3.0": {
+        "roi": 1.6152,
+        "n_lineups": 7440,
+        "cash_rate": 0.2801,
+        "avg_points": 310.79
+      },
+      "4.0": {
+        "roi": 1.5863,
+        "n_lineups": 1018,
+        "cash_rate": 0.2623,
+        "avg_points": 351.86
+      },
+      "5.0": {
+        "roi": 1.3514,
+        "n_lineups": 2,
+        "cash_rate": 0.5,
+        "avg_points": 284.75
+      }
+    },
+    "favorite_count_roi": {
+      "0": {
+        "roi": 0.9821,
+        "n_lineups": 21975,
+        "cash_rate": 0.2071,
+        "avg_points": 274.04
+      },
+      "1": {
+        "roi": 1.2125,
+        "n_lineups": 2027,
+        "cash_rate": 0.2102,
+        "avg_points": 227.4
+      },
+      "2": {
+        "roi": 0.5971,
+        "n_lineups": 1684,
+        "cash_rate": 0.1811,
+        "avg_points": 211.81
+      },
+      "3": {
+        "roi": 1.2322,
+        "n_lineups": 1808,
+        "cash_rate": 0.2417,
+        "avg_points": 292.85
+      },
+      "4": {
+        "roi": 1.5293,
+        "n_lineups": 1232,
+        "cash_rate": 0.2606,
+        "avg_points": 351.01
+      },
+      "5": {
+        "roi": 0.7506,
+        "n_lineups": 217,
+        "cash_rate": 0.212,
+        "avg_points": 356.74
+      },
+      "6": {
+        "roi": 0.6006,
+        "n_lineups": 3,
+        "cash_rate": 0.3333,
+        "avg_points": 380.69
+      }
+    },
+    "scoring_thresholds": {
+      "avg_points": 272.24,
+      "cash_line_points": 346.85,
+      "top_5pct_points": 423.63,
+      "top_1pct_points": 489.3,
+      "winner_points": 502.86,
+      "n_contests": 131
+    }
+  },
+  "SE": {
+    "n_contests": 8,
+    "n_lineups": 87,
+    "ownership_roi": {
+      "<100%": {
+        "roi": 0.2752,
+        "n_lineups": 6,
+        "cash_rate": 0.1667,
+        "avg_points": 158.49
+      },
+      "100-125%": {
+        "roi": 0.7075,
+        "n_lineups": 4,
+        "cash_rate": 0.25,
+        "avg_points": 218.99
+      },
+      "125-150%": {
+        "roi": 0.0,
+        "n_lineups": 1,
+        "cash_rate": 0.0,
+        "avg_points": 129.02
+      },
+      "150-175%": {
+        "roi": 3.3019,
+        "n_lineups": 2,
+        "cash_rate": 0.5,
+        "avg_points": 284.68
+      },
+      "175-200%": {
+        "roi": 2.3585,
+        "n_lineups": 5,
+        "cash_rate": 0.4,
+        "avg_points": 154.06
+      },
+      "200%+": {
+        "roi": 1.0613,
+        "n_lineups": 69,
+        "cash_rate": 0.2464,
+        "avg_points": 361.49
+      }
+    },
+    "salary_remaining_roi": {
+      "<$500": {
+        "roi": 1.2571,
+        "n_lineups": 50,
+        "cash_rate": 0.3,
+        "avg_points": 389.86
+      },
+      "$500-999": {
+        "roi": 3.7736,
+        "n_lineups": 1,
+        "cash_rate": 1.0,
+        "avg_points": 535.21
+      },
+      "$1K-2K": {
+        "roi": 0.0,
+        "n_lineups": 2,
+        "cash_rate": 0.0,
+        "avg_points": 450.74
+      },
+      "$2K+": {
+        "roi": 0.8671,
+        "n_lineups": 34,
+        "cash_rate": 0.1765,
+        "avg_points": 214.95
+      }
+    },
+    "salary_spread_roi": {
+      "<$1K": {
+        "roi": 1.3477,
+        "n_lineups": 7,
+        "cash_rate": 0.2857,
+        "avg_points": 213.06
+      },
+      "$1K-2K": {
+        "roi": 1.0241,
+        "n_lineups": 19,
+        "cash_rate": 0.2105,
+        "avg_points": 146.16
+      },
+      "$2K-3K": {
+        "roi": 1.1168,
+        "n_lineups": 34,
+        "cash_rate": 0.2647,
+        "avg_points": 342.09
+      },
+      "$3K-4K": {
+        "roi": 0.0,
+        "n_lineups": 3,
+        "cash_rate": 0.0,
+        "avg_points": 407.0
+      },
+      "$4K-5K": {
+        "roi": null,
+        "n_lineups": 0,
+        "cash_rate": null,
+        "avg_points": null
+      },
+      "$5K+": {
+        "roi": null,
+        "n_lineups": 0,
+        "cash_rate": null,
+        "avg_points": null
+      }
+    },
+    "min_ownership_roi": {
+      "0-2%": {
+        "roi": null,
+        "n_lineups": 0,
+        "cash_rate": null,
+        "avg_points": null
+      },
+      "2-5%": {
+        "roi": null,
+        "n_lineups": 0,
+        "cash_rate": null,
+        "avg_points": null
+      },
+      "5-8%": {
+        "roi": 2.4764,
+        "n_lineups": 4,
+        "cash_rate": 0.5,
+        "avg_points": 523.23
+      },
+      "8-12%": {
+        "roi": 2.3585,
+        "n_lineups": 4,
+        "cash_rate": 0.5,
+        "avg_points": 463.14
+      },
+      "12-18%": {
+        "roi": 1.0782,
+        "n_lineups": 7,
+        "cash_rate": 0.2857,
+        "avg_points": 458.01
+      },
+      "18%+": {
+        "roi": 0.2621,
+        "n_lineups": 9,
+        "cash_rate": 0.1111,
+        "avg_points": 440.68
+      }
+    },
+    "max_ownership_roi": {
+      "<20%": {
+        "roi": null,
+        "n_lineups": 0,
+        "cash_rate": null,
+        "avg_points": null
+      },
+      "20-30%": {
+        "roi": null,
+        "n_lineups": 0,
+        "cash_rate": null,
+        "avg_points": null
+      },
+      "30-40%": {
+        "roi": null,
+        "n_lineups": 0,
+        "cash_rate": null,
+        "avg_points": null
+      },
+      "40-50%": {
+        "roi": null,
+        "n_lineups": 0,
+        "cash_rate": null,
+        "avg_points": null
+      },
+      "50-60%": {
+        "roi": null,
+        "n_lineups": 0,
+        "cash_rate": null,
+        "avg_points": null
+      },
+      "60%+": {
+        "roi": 1.2186,
+        "n_lineups": 24,
+        "cash_rate": 0.2917,
+        "avg_points": 463.24
+      }
+    },
+    "lineup_count_roi": {
+      "1 (unique)": {
+        "roi": 1.1441,
+        "n_lineups": 84,
+        "cash_rate": 0.2619,
+        "avg_points": 319.96
+      },
+      "2-5": {
+        "roi": 0.0,
+        "n_lineups": 3,
+        "cash_rate": 0.0,
+        "avg_points": 453.94
+      },
+      "6-20": {
+        "roi": null,
+        "n_lineups": 0,
+        "cash_rate": null,
+        "avg_points": null
+      },
+      "21-100": {
+        "roi": null,
+        "n_lineups": 0,
+        "cash_rate": null,
+        "avg_points": null
+      },
+      "101+": {
+        "roi": null,
+        "n_lineups": 0,
+        "cash_rate": null,
+        "avg_points": null
+      }
+    },
+    "high_salary_count_roi": {
+      "0.0": {
+        "roi": 0.0,
+        "n_lineups": 4,
+        "cash_rate": 0.0,
+        "avg_points": 131.04
+      },
+      "1.0": {
+        "roi": 1.022,
+        "n_lineups": 12,
+        "cash_rate": 0.1667,
+        "avg_points": 106.54
+      },
+      "2.0": {
+        "roi": 1.3527,
+        "n_lineups": 17,
+        "cash_rate": 0.2941,
+        "avg_points": 252.0
+      },
+      "3.0": {
+        "roi": 1.0024,
+        "n_lineups": 24,
+        "cash_rate": 0.2083,
+        "avg_points": 357.73
+      },
+      "4.0": {
+        "roi": 1.2579,
+        "n_lineups": 6,
+        "cash_rate": 0.5,
+        "avg_points": 408.06
+      }
+    },
+    "favorite_count_roi": {
+      "0": {
+        "roi": 1.2186,
+        "n_lineups": 48,
+        "cash_rate": 0.2917,
+        "avg_points": 407.32
+      },
+      "1": {
+        "roi": 0.1376,
+        "n_lineups": 12,
+        "cash_rate": 0.0833,
+        "avg_points": 203.9
+      },
+      "2": {
+        "roi": 1.1072,
+        "n_lineups": 18,
+        "cash_rate": 0.2222,
+        "avg_points": 135.96
+      },
+      "3": {
+        "roi": 1.8868,
+        "n_lineups": 5,
+        "cash_rate": 0.4,
+        "avg_points": 399.97
+      },
+      "4": {
+        "roi": 1.6509,
+        "n_lineups": 4,
+        "cash_rate": 0.25,
+        "avg_points": 448.21
+      }
+    },
+    "scoring_thresholds": {
+      "avg_points": 324.58,
+      "cash_line_points": 427.43,
+      "top_5pct_points": 480.32,
+      "top_1pct_points": 480.32,
+      "winner_points": 480.32,
+      "n_contests": 8
+    }
+  },
+  "20-Max": {
+    "n_contests": 3,
+    "n_lineups": 1702,
+    "ownership_roi": {
+      "<100%": {
+        "roi": 0.0945,
+        "n_lineups": 673,
+        "cash_rate": 0.0475,
+        "avg_points": 130.69
+      },
+      "100-125%": {
+        "roi": 0.6204,
+        "n_lineups": 438,
+        "cash_rate": 0.3151,
+        "avg_points": 186.97
+      },
+      "125-150%": {
+        "roi": 1.5434,
+        "n_lineups": 356,
+        "cash_rate": 0.5225,
+        "avg_points": 217.16
+      },
+      "150-175%": {
+        "roi": 1.696,
+        "n_lineups": 168,
+        "cash_rate": 0.5893,
+        "avg_points": 223.27
+      },
+      "175-200%": {
+        "roi": 12.8317,
+        "n_lineups": 54,
+        "cash_rate": 0.7037,
+        "avg_points": 229.12
+      },
+      "200%+": {
+        "roi": 1.9722,
+        "n_lineups": 12,
+        "cash_rate": 0.4167,
+        "avg_points": 188.56
+      }
+    },
+    "salary_remaining_roi": {
+      "<$500": {
+        "roi": 13.2551,
+        "n_lineups": 45,
+        "cash_rate": 0.8,
+        "avg_points": 285.39
+      },
+      "$500-999": {
+        "roi": 19.9444,
+        "n_lineups": 6,
+        "cash_rate": 0.8333,
+        "avg_points": 465.18
+      },
+      "$1K-2K": {
+        "roi": 3.5667,
+        "n_lineups": 10,
+        "cash_rate": 0.9,
+        "avg_points": 440.87
+      },
+      "$2K+": {
+        "roi": 0.6914,
+        "n_lineups": 1641,
+        "cash_rate": 0.273,
+        "avg_points": 170.18
+      }
+    },
+    "salary_spread_roi": {
+      "<$1K": {
+        "roi": 0.1083,
+        "n_lineups": 297,
+        "cash_rate": 0.0572,
+        "avg_points": 104.49
+      },
+      "$1K-2K": {
+        "roi": 1.1004,
+        "n_lineups": 777,
+        "cash_rate": 0.2986,
+        "avg_points": 165.97
+      },
+      "$2K-3K": {
+        "roi": 1.5935,
+        "n_lineups": 627,
+        "cash_rate": 0.3971,
+        "avg_points": 222.18
+      },
+      "$3K-4K": {
+        "roi": null,
+        "n_lineups": 0,
+        "cash_rate": null,
+        "avg_points": null
+      },
+      "$4K-5K": {
+        "roi": null,
+        "n_lineups": 0,
+        "cash_rate": null,
+        "avg_points": null
+      },
+      "$5K+": {
+        "roi": null,
+        "n_lineups": 0,
+        "cash_rate": null,
+        "avg_points": null
+      }
+    },
+    "min_ownership_roi": {
+      "0-2%": {
+        "roi": null,
+        "n_lineups": 0,
+        "cash_rate": null,
+        "avg_points": null
+      },
+      "2-5%": {
+        "roi": null,
+        "n_lineups": 0,
+        "cash_rate": null,
+        "avg_points": null
+      },
+      "5-8%": {
+        "roi": null,
+        "n_lineups": 0,
+        "cash_rate": null,
+        "avg_points": null
+      },
+      "8-12%": {
+        "roi": null,
+        "n_lineups": 0,
+        "cash_rate": null,
+        "avg_points": null
+      },
+      "12-18%": {
+        "roi": null,
+        "n_lineups": 0,
+        "cash_rate": null,
+        "avg_points": null
+      },
+      "18%+": {
+        "roi": null,
+        "n_lineups": 0,
+        "cash_rate": null,
+        "avg_points": null
+      }
+    },
+    "max_ownership_roi": {
+      "<20%": {
+        "roi": null,
+        "n_lineups": 0,
+        "cash_rate": null,
+        "avg_points": null
+      },
+      "20-30%": {
+        "roi": null,
+        "n_lineups": 0,
+        "cash_rate": null,
+        "avg_points": null
+      },
+      "30-40%": {
+        "roi": null,
+        "n_lineups": 0,
+        "cash_rate": null,
+        "avg_points": null
+      },
+      "40-50%": {
+        "roi": null,
+        "n_lineups": 0,
+        "cash_rate": null,
+        "avg_points": null
+      },
+      "50-60%": {
+        "roi": null,
+        "n_lineups": 0,
+        "cash_rate": null,
+        "avg_points": null
+      },
+      "60%+": {
+        "roi": null,
+        "n_lineups": 0,
+        "cash_rate": null,
+        "avg_points": null
+      }
+    },
+    "lineup_count_roi": {
+      "1 (unique)": {
+        "roi": 1.1083,
+        "n_lineups": 1702,
+        "cash_rate": 0.2926,
+        "avg_points": 175.85
+      },
+      "2-5": {
+        "roi": null,
+        "n_lineups": 0,
+        "cash_rate": null,
+        "avg_points": null
+      },
+      "6-20": {
+        "roi": null,
+        "n_lineups": 0,
+        "cash_rate": null,
+        "avg_points": null
+      },
+      "21-100": {
+        "roi": null,
+        "n_lineups": 0,
+        "cash_rate": null,
+        "avg_points": null
+      },
+      "101+": {
+        "roi": null,
+        "n_lineups": 0,
+        "cash_rate": null,
+        "avg_points": null
+      }
+    },
+    "high_salary_count_roi": {
+      "0.0": {
+        "roi": 0.0081,
+        "n_lineups": 205,
+        "cash_rate": 0.0049,
+        "avg_points": 89.56
+      },
+      "1.0": {
+        "roi": 0.2714,
+        "n_lineups": 659,
+        "cash_rate": 0.1563,
+        "avg_points": 158.73
+      },
+      "2.0": {
+        "roi": 1.226,
+        "n_lineups": 686,
+        "cash_rate": 0.4315,
+        "avg_points": 203.39
+      },
+      "3.0": {
+        "roi": 5.7654,
+        "n_lineups": 150,
+        "cash_rate": 0.6533,
+        "avg_points": 244.93
+      },
+      "4.0": {
+        "roi": 0.0,
+        "n_lineups": 1,
+        "cash_rate": 0.0,
+        "avg_points": 75.74
+      }
+    },
+    "favorite_count_roi": {
+      "0": {
+        "roi": 1.1083,
+        "n_lineups": 1702,
+        "cash_rate": 0.2926,
+        "avg_points": 175.85
+      }
+    },
+    "scoring_thresholds": {
+      "avg_points": 175.85,
+      "cash_line_points": 182.06,
+      "top_5pct_points": 269.73,
+      "top_1pct_points": 332.67,
+      "winner_points": 379.75,
+      "n_contests": 3
+    }
+  },
+  "150-Max": {
+    "n_contests": 4,
+    "n_lineups": 2876,
+    "ownership_roi": {
+      "<100%": {
+        "roi": 0.1252,
+        "n_lineups": 1206,
+        "cash_rate": 0.0738,
+        "avg_points": 144.04
+      },
+      "100-125%": {
+        "roi": 0.5746,
+        "n_lineups": 759,
+        "cash_rate": 0.278,
+        "avg_points": 205.63
+      },
+      "125-150%": {
+        "roi": 4.9178,
+        "n_lineups": 528,
+        "cash_rate": 0.4602,
+        "avg_points": 239.15
+      },
+      "150-175%": {
+        "roi": 2.2477,
+        "n_lineups": 235,
+        "cash_rate": 0.6766,
+        "avg_points": 264.59
+      },
+      "175-200%": {
+        "roi": 81.7175,
+        "n_lineups": 115,
+        "cash_rate": 0.887,
+        "avg_points": 298.51
+      },
+      "200%+": {
+        "roi": 9.8486,
+        "n_lineups": 29,
+        "cash_rate": 1.0,
+        "avg_points": 339.1
+      }
+    },
+    "salary_remaining_roi": {
+      "<$500": {
+        "roi": 139.3917,
+        "n_lineups": 21,
+        "cash_rate": 0.9048,
+        "avg_points": 339.12
+      },
+      "$500-999": {
+        "roi": 2.1393,
+        "n_lineups": 7,
+        "cash_rate": 0.7143,
+        "avg_points": 300.14
+      },
+      "$1K-2K": {
+        "roi": 8.0,
+        "n_lineups": 1,
+        "cash_rate": 1.0,
+        "avg_points": 401.68
+      },
+      "$2K+": {
+        "roi": 3.6687,
+        "n_lineups": 2847,
+        "cash_rate": 0.2838,
+        "avg_points": 194.16
+      }
+    },
+    "salary_spread_roi": {
+      "<$1K": {
+        "roi": 0.2818,
+        "n_lineups": 533,
+        "cash_rate": 0.1501,
+        "avg_points": 143.49
+      },
+      "$1K-2K": {
+        "roi": 2.8629,
+        "n_lineups": 1408,
+        "cash_rate": 0.2919,
+        "avg_points": 201.45
+      },
+      "$2K-3K": {
+        "roi": 9.8967,
+        "n_lineups": 931,
+        "cash_rate": 0.3673,
+        "avg_points": 217.26
+      },
+      "$3K-4K": {
+        "roi": null,
+        "n_lineups": 0,
+        "cash_rate": null,
+        "avg_points": null
+      },
+      "$4K-5K": {
+        "roi": null,
+        "n_lineups": 0,
+        "cash_rate": null,
+        "avg_points": null
+      },
+      "$5K+": {
+        "roi": null,
+        "n_lineups": 0,
+        "cash_rate": null,
+        "avg_points": null
+      }
+    },
+    "min_ownership_roi": {
+      "0-2%": {
+        "roi": null,
+        "n_lineups": 0,
+        "cash_rate": null,
+        "avg_points": null
+      },
+      "2-5%": {
+        "roi": null,
+        "n_lineups": 0,
+        "cash_rate": null,
+        "avg_points": null
+      },
+      "5-8%": {
+        "roi": null,
+        "n_lineups": 0,
+        "cash_rate": null,
+        "avg_points": null
+      },
+      "8-12%": {
+        "roi": null,
+        "n_lineups": 0,
+        "cash_rate": null,
+        "avg_points": null
+      },
+      "12-18%": {
+        "roi": null,
+        "n_lineups": 0,
+        "cash_rate": null,
+        "avg_points": null
+      },
+      "18%+": {
+        "roi": null,
+        "n_lineups": 0,
+        "cash_rate": null,
+        "avg_points": null
+      }
+    },
+    "max_ownership_roi": {
+      "<20%": {
+        "roi": null,
+        "n_lineups": 0,
+        "cash_rate": null,
+        "avg_points": null
+      },
+      "20-30%": {
+        "roi": null,
+        "n_lineups": 0,
+        "cash_rate": null,
+        "avg_points": null
+      },
+      "30-40%": {
+        "roi": null,
+        "n_lineups": 0,
+        "cash_rate": null,
+        "avg_points": null
+      },
+      "40-50%": {
+        "roi": null,
+        "n_lineups": 0,
+        "cash_rate": null,
+        "avg_points": null
+      },
+      "50-60%": {
+        "roi": null,
+        "n_lineups": 0,
+        "cash_rate": null,
+        "avg_points": null
+      },
+      "60%+": {
+        "roi": null,
+        "n_lineups": 0,
+        "cash_rate": null,
+        "avg_points": null
+      }
+    },
+    "lineup_count_roi": {
+      "1 (unique)": {
+        "roi": 4.6575,
+        "n_lineups": 2876,
+        "cash_rate": 0.2896,
+        "avg_points": 195.55
+      },
+      "2-5": {
+        "roi": null,
+        "n_lineups": 0,
+        "cash_rate": null,
+        "avg_points": null
+      },
+      "6-20": {
+        "roi": null,
+        "n_lineups": 0,
+        "cash_rate": null,
+        "avg_points": null
+      },
+      "21-100": {
+        "roi": null,
+        "n_lineups": 0,
+        "cash_rate": null,
+        "avg_points": null
+      },
+      "101+": {
+        "roi": null,
+        "n_lineups": 0,
+        "cash_rate": null,
+        "avg_points": null
+      }
+    },
+    "high_salary_count_roi": {
+      "0.0": {
+        "roi": 0.0,
+        "n_lineups": 393,
+        "cash_rate": 0.0,
+        "avg_points": 107.72
+      },
+      "1.0": {
+        "roi": 0.3008,
+        "n_lineups": 959,
+        "cash_rate": 0.147,
+        "avg_points": 175.16
+      },
+      "2.0": {
+        "roi": 11.1589,
+        "n_lineups": 811,
+        "cash_rate": 0.3292,
+        "avg_points": 210.68
+      },
+      "3.0": {
+        "roi": 1.2367,
+        "n_lineups": 560,
+        "cash_rate": 0.5304,
+        "avg_points": 242.65
+      },
+      "4.0": {
+        "roi": 22.5784,
+        "n_lineups": 149,
+        "cash_rate": 0.8591,
+        "avg_points": 304.34
+      }
+    },
+    "favorite_count_roi": {
+      "0": {
+        "roi": 4.6575,
+        "n_lineups": 2876,
+        "cash_rate": 0.2896,
+        "avg_points": 195.55
+      }
+    },
+    "scoring_thresholds": {
+      "avg_points": 195.55,
+      "cash_line_points": 241.37,
+      "top_5pct_points": 329.49,
+      "top_1pct_points": 391.41,
+      "winner_points": 432.81,
+      "n_contests": 4
+    }
+  },
+  "effective_entries": {
+    "<0.1%": {
+      "roi": null,
+      "n_lineups": 0,
+      "cash_rate": null,
+      "avg_points": null
+    },
+    "0.1-1%": {
+      "roi": 4.6178,
+      "n_lineups": 2225,
+      "cash_rate": 0.276,
+      "avg_points": 213.01
+    },
+    "1-5%": {
+      "roi": 1.0967,
+      "n_lineups": 31318,
+      "cash_rate": 0.2174,
+      "avg_points": 264.06
+    },
+    "5-10%": {
+      "roi": 1.1444,
+      "n_lineups": 61,
+      "cash_rate": 0.2623,
+      "avg_points": 380.1
+    },
+    "10-50%": {
+      "roi": 1.0782,
+      "n_lineups": 7,
+      "cash_rate": 0.2857,
+      "avg_points": 450.1
+    },
+    "50%+": {
+      "roi": null,
+      "n_lineups": 0,
+      "cash_rate": null,
+      "avg_points": null
+    }
+  }
+}
