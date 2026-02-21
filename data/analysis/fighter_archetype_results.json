@@ -1,0 +1,1906 @@
+{
+  "weight_class_x_archetype": {
+    "UNLIMITED": {
+      "Catch Weight": {
+        "tier": "?",
+        "n": 38,
+        "avg_fpts": 49.92,
+        "avg_value": 6.039,
+        "ceiling_pct": 36.8,
+        "dud_pct": 34.2,
+        "small_sample": true
+      },
+      "Women's Strawweight": {
+        "tier": "S",
+        "n": 149,
+        "avg_fpts": 38.5,
+        "avg_value": 4.64,
+        "ceiling_pct": 28.2,
+        "dud_pct": 35.6,
+        "small_sample": false
+      },
+      "Welterweight": {
+        "tier": "A",
+        "n": 274,
+        "avg_fpts": 35.16,
+        "avg_value": 4.33,
+        "ceiling_pct": 24.5,
+        "dud_pct": 36.1,
+        "small_sample": false
+      },
+      "Women's Flyweight": {
+        "tier": "S",
+        "n": 127,
+        "avg_fpts": 35.51,
+        "avg_value": 4.247,
+        "ceiling_pct": 27.6,
+        "dud_pct": 41.7,
+        "small_sample": false
+      },
+      "Women's Bantamweight": {
+        "tier": "?",
+        "n": 84,
+        "avg_fpts": 34.53,
+        "avg_value": 4.173,
+        "ceiling_pct": 27.4,
+        "dud_pct": 38.1,
+        "small_sample": false
+      },
+      "Lightweight": {
+        "tier": "B",
+        "n": 277,
+        "avg_fpts": 33.82,
+        "avg_value": 4.114,
+        "ceiling_pct": 25.6,
+        "dud_pct": 40.4,
+        "small_sample": false
+      },
+      "Featherweight": {
+        "tier": "S",
+        "n": 243,
+        "avg_fpts": 32.4,
+        "avg_value": 3.931,
+        "ceiling_pct": 24.7,
+        "dud_pct": 42.0,
+        "small_sample": false
+      },
+      "Light Heavyweight": {
+        "tier": "B",
+        "n": 147,
+        "avg_fpts": 31.88,
+        "avg_value": 3.923,
+        "ceiling_pct": 24.5,
+        "dud_pct": 43.5,
+        "small_sample": false
+      },
+      "Middleweight": {
+        "tier": "A",
+        "n": 269,
+        "avg_fpts": 32.09,
+        "avg_value": 3.857,
+        "ceiling_pct": 25.3,
+        "dud_pct": 42.8,
+        "small_sample": false
+      },
+      "Heavyweight": {
+        "tier": "A",
+        "n": 152,
+        "avg_fpts": 30.21,
+        "avg_value": 3.685,
+        "ceiling_pct": 23.0,
+        "dud_pct": 45.4,
+        "small_sample": false
+      },
+      "Flyweight": {
+        "tier": "F",
+        "n": 148,
+        "avg_fpts": 28.47,
+        "avg_value": 3.404,
+        "ceiling_pct": 23.6,
+        "dud_pct": 52.7,
+        "small_sample": false
+      },
+      "Bantamweight": {
+        "tier": "F",
+        "n": 291,
+        "avg_fpts": 27.32,
+        "avg_value": 3.315,
+        "ceiling_pct": 21.3,
+        "dud_pct": 51.9,
+        "small_sample": false
+      },
+      "Women's Featherweight": {
+        "tier": "?",
+        "n": 1,
+        "avg_fpts": 0.0,
+        "avg_value": 0.0,
+        "ceiling_pct": 0.0,
+        "dud_pct": 100.0,
+        "small_sample": true
+      }
+    },
+    "LIMITED": {
+      "Catch Weight": {
+        "tier": "?",
+        "n": 37,
+        "avg_fpts": 51.27,
+        "avg_value": 6.202,
+        "ceiling_pct": 37.8,
+        "dud_pct": 32.4,
+        "small_sample": true
+      },
+      "Women's Strawweight": {
+        "tier": "S",
+        "n": 147,
+        "avg_fpts": 38.79,
+        "avg_value": 4.678,
+        "ceiling_pct": 28.6,
+        "dud_pct": 35.4,
+        "small_sample": false
+      },
+      "Welterweight": {
+        "tier": "A",
+        "n": 263,
+        "avg_fpts": 35.16,
+        "avg_value": 4.339,
+        "ceiling_pct": 24.3,
+        "dud_pct": 36.1,
+        "small_sample": false
+      },
+      "Women's Flyweight": {
+        "tier": "S",
+        "n": 125,
+        "avg_fpts": 35.49,
+        "avg_value": 4.238,
+        "ceiling_pct": 27.2,
+        "dud_pct": 41.6,
+        "small_sample": false
+      },
+      "Women's Bantamweight": {
+        "tier": "?",
+        "n": 87,
+        "avg_fpts": 34.95,
+        "avg_value": 4.224,
+        "ceiling_pct": 27.6,
+        "dud_pct": 37.9,
+        "small_sample": false
+      },
+      "Lightweight": {
+        "tier": "B",
+        "n": 270,
+        "avg_fpts": 34.0,
+        "avg_value": 4.133,
+        "ceiling_pct": 25.6,
+        "dud_pct": 39.6,
+        "small_sample": false
+      },
+      "Featherweight": {
+        "tier": "S",
+        "n": 235,
+        "avg_fpts": 32.74,
+        "avg_value": 3.958,
+        "ceiling_pct": 25.5,
+        "dud_pct": 42.1,
+        "small_sample": false
+      },
+      "Light Heavyweight": {
+        "tier": "B",
+        "n": 140,
+        "avg_fpts": 31.11,
+        "avg_value": 3.833,
+        "ceiling_pct": 24.3,
+        "dud_pct": 45.0,
+        "small_sample": false
+      },
+      "Middleweight": {
+        "tier": "A",
+        "n": 258,
+        "avg_fpts": 31.68,
+        "avg_value": 3.809,
+        "ceiling_pct": 24.8,
+        "dud_pct": 43.4,
+        "small_sample": false
+      },
+      "Heavyweight": {
+        "tier": "A",
+        "n": 146,
+        "avg_fpts": 30.09,
+        "avg_value": 3.686,
+        "ceiling_pct": 23.3,
+        "dud_pct": 45.9,
+        "small_sample": false
+      },
+      "Flyweight": {
+        "tier": "F",
+        "n": 144,
+        "avg_fpts": 28.74,
+        "avg_value": 3.436,
+        "ceiling_pct": 24.3,
+        "dud_pct": 52.8,
+        "small_sample": false
+      },
+      "Bantamweight": {
+        "tier": "F",
+        "n": 291,
+        "avg_fpts": 26.98,
+        "avg_value": 3.28,
+        "ceiling_pct": 20.6,
+        "dud_pct": 52.2,
+        "small_sample": false
+      },
+      "Women's Featherweight": {
+        "tier": "?",
+        "n": 1,
+        "avg_fpts": 0.0,
+        "avg_value": 0.0,
+        "ceiling_pct": 0.0,
+        "dud_pct": 100.0,
+        "small_sample": true
+      }
+    },
+    "SE": {
+      "Catch Weight": {
+        "tier": "?",
+        "n": 2,
+        "avg_fpts": 118.06,
+        "avg_value": 13.886,
+        "ceiling_pct": 100.0,
+        "dud_pct": 0.0,
+        "small_sample": true
+      },
+      "Heavyweight": {
+        "tier": "A",
+        "n": 4,
+        "avg_fpts": 97.3,
+        "avg_value": 11.486,
+        "ceiling_pct": 75.0,
+        "dud_pct": 0.0,
+        "small_sample": true
+      },
+      "Featherweight": {
+        "tier": "S",
+        "n": 8,
+        "avg_fpts": 46.16,
+        "avg_value": 5.74,
+        "ceiling_pct": 37.5,
+        "dud_pct": 37.5,
+        "small_sample": true
+      },
+      "Women's Strawweight": {
+        "tier": "S",
+        "n": 5,
+        "avg_fpts": 40.36,
+        "avg_value": 5.088,
+        "ceiling_pct": 40.0,
+        "dud_pct": 40.0,
+        "small_sample": true
+      },
+      "Women's Bantamweight": {
+        "tier": "?",
+        "n": 5,
+        "avg_fpts": 42.46,
+        "avg_value": 4.935,
+        "ceiling_pct": 40.0,
+        "dud_pct": 20.0,
+        "small_sample": true
+      },
+      "Welterweight": {
+        "tier": "A",
+        "n": 11,
+        "avg_fpts": 36.42,
+        "avg_value": 4.819,
+        "ceiling_pct": 27.3,
+        "dud_pct": 27.3,
+        "small_sample": true
+      },
+      "Middleweight": {
+        "tier": "A",
+        "n": 9,
+        "avg_fpts": 39.8,
+        "avg_value": 4.573,
+        "ceiling_pct": 33.3,
+        "dud_pct": 44.4,
+        "small_sample": true
+      },
+      "Lightweight": {
+        "tier": "B",
+        "n": 12,
+        "avg_fpts": 24.6,
+        "avg_value": 3.156,
+        "ceiling_pct": 16.7,
+        "dud_pct": 50.0,
+        "small_sample": true
+      },
+      "Light Heavyweight": {
+        "tier": "B",
+        "n": 12,
+        "avg_fpts": 20.66,
+        "avg_value": 2.627,
+        "ceiling_pct": 16.7,
+        "dud_pct": 58.3,
+        "small_sample": true
+      },
+      "Bantamweight": {
+        "tier": "F",
+        "n": 9,
+        "avg_fpts": 15.56,
+        "avg_value": 1.826,
+        "ceiling_pct": 11.1,
+        "dud_pct": 44.4,
+        "small_sample": true
+      },
+      "Women's Featherweight": {
+        "tier": "?",
+        "n": 1,
+        "avg_fpts": 0.0,
+        "avg_value": 0.0,
+        "ceiling_pct": 0.0,
+        "dud_pct": 100.0,
+        "small_sample": true
+      },
+      "Women's Flyweight": {
+        "tier": "S",
+        "n": 1,
+        "avg_fpts": 0.0,
+        "avg_value": 0.0,
+        "ceiling_pct": 0.0,
+        "dud_pct": 100.0,
+        "small_sample": true
+      }
+    },
+    "20-Max": {
+      "Light Heavyweight": {
+        "tier": "B",
+        "n": 5,
+        "avg_fpts": 40.61,
+        "avg_value": 5.126,
+        "ceiling_pct": 40.0,
+        "dud_pct": 40.0,
+        "small_sample": true
+      },
+      "Welterweight": {
+        "tier": "A",
+        "n": 12,
+        "avg_fpts": 20.79,
+        "avg_value": 2.705,
+        "ceiling_pct": 16.7,
+        "dud_pct": 66.7,
+        "small_sample": true
+      },
+      "Women's Flyweight": {
+        "tier": "S",
+        "n": 4,
+        "avg_fpts": 18.36,
+        "avg_value": 2.415,
+        "ceiling_pct": 25.0,
+        "dud_pct": 75.0,
+        "small_sample": true
+      },
+      "Middleweight": {
+        "tier": "A",
+        "n": 6,
+        "avg_fpts": 19.36,
+        "avg_value": 2.284,
+        "ceiling_pct": 16.7,
+        "dud_pct": 66.7,
+        "small_sample": true
+      },
+      "Flyweight": {
+        "tier": "F",
+        "n": 9,
+        "avg_fpts": 19.81,
+        "avg_value": 2.199,
+        "ceiling_pct": 11.1,
+        "dud_pct": 66.7,
+        "small_sample": true
+      },
+      "Heavyweight": {
+        "tier": "A",
+        "n": 10,
+        "avg_fpts": 16.91,
+        "avg_value": 2.036,
+        "ceiling_pct": 0.0,
+        "dud_pct": 50.0,
+        "small_sample": true
+      },
+      "Featherweight": {
+        "tier": "S",
+        "n": 11,
+        "avg_fpts": 14.22,
+        "avg_value": 1.854,
+        "ceiling_pct": 0.0,
+        "dud_pct": 54.5,
+        "small_sample": true
+      },
+      "Bantamweight": {
+        "tier": "F",
+        "n": 5,
+        "avg_fpts": 13.56,
+        "avg_value": 1.808,
+        "ceiling_pct": 20.0,
+        "dud_pct": 80.0,
+        "small_sample": true
+      },
+      "Women's Strawweight": {
+        "tier": "S",
+        "n": 3,
+        "avg_fpts": 11.38,
+        "avg_value": 1.237,
+        "ceiling_pct": 0.0,
+        "dud_pct": 66.7,
+        "small_sample": true
+      },
+      "Lightweight": {
+        "tier": "B",
+        "n": 7,
+        "avg_fpts": 6.69,
+        "avg_value": 0.88,
+        "ceiling_pct": 0.0,
+        "dud_pct": 85.7,
+        "small_sample": true
+      },
+      "Catch Weight": {
+        "tier": "?",
+        "n": 1,
+        "avg_fpts": 0.0,
+        "avg_value": 0.0,
+        "ceiling_pct": 0.0,
+        "dud_pct": 100.0,
+        "small_sample": true
+      },
+      "Women's Bantamweight": {
+        "tier": "?",
+        "n": 1,
+        "avg_fpts": 0.0,
+        "avg_value": 0.0,
+        "ceiling_pct": 0.0,
+        "dud_pct": 100.0,
+        "small_sample": true
+      }
+    },
+    "150-Max": {
+      "Lightweight": {
+        "tier": "B",
+        "n": 2,
+        "avg_fpts": 59.85,
+        "avg_value": 8.107,
+        "ceiling_pct": 50.0,
+        "dud_pct": 0.0,
+        "small_sample": true
+      },
+      "Featherweight": {
+        "tier": "S",
+        "n": 2,
+        "avg_fpts": 51.82,
+        "avg_value": 5.566,
+        "ceiling_pct": 50.0,
+        "dud_pct": 0.0,
+        "small_sample": true
+      },
+      "Light Heavyweight": {
+        "tier": "B",
+        "n": 3,
+        "avg_fpts": 35.9,
+        "avg_value": 4.349,
+        "ceiling_pct": 0.0,
+        "dud_pct": 33.3,
+        "small_sample": true
+      },
+      "Women's Bantamweight": {
+        "tier": "?",
+        "n": 4,
+        "avg_fpts": 35.08,
+        "avg_value": 4.255,
+        "ceiling_pct": 25.0,
+        "dud_pct": 50.0,
+        "small_sample": true
+      },
+      "Welterweight": {
+        "tier": "A",
+        "n": 5,
+        "avg_fpts": 22.53,
+        "avg_value": 2.661,
+        "ceiling_pct": 20.0,
+        "dud_pct": 60.0,
+        "small_sample": true
+      },
+      "Bantamweight": {
+        "tier": "F",
+        "n": 11,
+        "avg_fpts": 18.25,
+        "avg_value": 2.282,
+        "ceiling_pct": 9.1,
+        "dud_pct": 72.7,
+        "small_sample": true
+      },
+      "Women's Strawweight": {
+        "tier": "S",
+        "n": 5,
+        "avg_fpts": 15.06,
+        "avg_value": 1.762,
+        "ceiling_pct": 0.0,
+        "dud_pct": 60.0,
+        "small_sample": true
+      },
+      "Flyweight": {
+        "tier": "F",
+        "n": 7,
+        "avg_fpts": 10.94,
+        "avg_value": 1.272,
+        "ceiling_pct": 14.3,
+        "dud_pct": 85.7,
+        "small_sample": true
+      },
+      "Women's Flyweight": {
+        "tier": "S",
+        "n": 2,
+        "avg_fpts": 9.4,
+        "avg_value": 0.979,
+        "ceiling_pct": 0.0,
+        "dud_pct": 50.0,
+        "small_sample": true
+      },
+      "Heavyweight": {
+        "tier": "A",
+        "n": 3,
+        "avg_fpts": 2.7,
+        "avg_value": 0.341,
+        "ceiling_pct": 0.0,
+        "dud_pct": 66.7,
+        "small_sample": true
+      },
+      "Catch Weight": {
+        "tier": "?",
+        "n": 1,
+        "avg_fpts": 0.0,
+        "avg_value": 0.0,
+        "ceiling_pct": 0.0,
+        "dud_pct": 100.0,
+        "small_sample": true
+      },
+      "Middleweight": {
+        "tier": "A",
+        "n": 2,
+        "avg_fpts": 0.0,
+        "avg_value": 0.0,
+        "ceiling_pct": 0.0,
+        "dud_pct": 100.0,
+        "small_sample": true
+      }
+    }
+  },
+  "gender_x_archetype": {
+    "UNLIMITED": {
+      "Men": {
+        "n": 1839,
+        "avg_fpts": 32.0,
+        "avg_value": 3.89,
+        "ceiling_pct": 24.4,
+        "dud_pct": 43.7,
+        "small_sample": false
+      },
+      "Women": {
+        "n": 361,
+        "avg_fpts": 36.42,
+        "avg_value": 4.38,
+        "ceiling_pct": 27.7,
+        "dud_pct": 38.5,
+        "small_sample": false
+      }
+    },
+    "LIMITED": {
+      "Men": {
+        "n": 1784,
+        "avg_fpts": 31.91,
+        "avg_value": 3.881,
+        "ceiling_pct": 24.3,
+        "dud_pct": 43.9,
+        "small_sample": false
+      },
+      "Women": {
+        "n": 360,
+        "avg_fpts": 36.61,
+        "avg_value": 4.403,
+        "ceiling_pct": 27.8,
+        "dud_pct": 38.3,
+        "small_sample": false
+      }
+    },
+    "SE": {
+      "Men": {
+        "n": 67,
+        "avg_fpts": 36.37,
+        "avg_value": 4.472,
+        "ceiling_pct": 28.4,
+        "dud_pct": 40.3,
+        "small_sample": false
+      },
+      "Women": {
+        "n": 12,
+        "avg_fpts": 34.51,
+        "avg_value": 4.176,
+        "ceiling_pct": 33.3,
+        "dud_pct": 41.7,
+        "small_sample": true
+      }
+    },
+    "20-Max": {
+      "Men": {
+        "n": 66,
+        "avg_fpts": 17.99,
+        "avg_value": 2.236,
+        "ceiling_pct": 10.6,
+        "dud_pct": 63.6,
+        "small_sample": false
+      },
+      "Women": {
+        "n": 8,
+        "avg_fpts": 13.45,
+        "avg_value": 1.671,
+        "ceiling_pct": 12.5,
+        "dud_pct": 75.0,
+        "small_sample": true
+      }
+    },
+    "150-Max": {
+      "Men": {
+        "n": 36,
+        "avg_fpts": 20.25,
+        "avg_value": 2.465,
+        "ceiling_pct": 13.9,
+        "dud_pct": 63.9,
+        "small_sample": true
+      },
+      "Women": {
+        "n": 11,
+        "avg_fpts": 21.31,
+        "avg_value": 2.526,
+        "ceiling_pct": 9.1,
+        "dud_pct": 54.5,
+        "small_sample": true
+      }
+    }
+  },
+  "line_movement_x_archetype": {
+    "UNLIMITED": {
+      "drifted": {
+        "n": 1582,
+        "avg_fpts": 29.27,
+        "avg_value": 3.712,
+        "ceiling_pct": 19.8,
+        "dud_pct": 37.9,
+        "small_sample": false
+      },
+      "stable": {
+        "n": 7353,
+        "avg_fpts": 40.49,
+        "avg_value": 4.905,
+        "ceiling_pct": 30.6,
+        "dud_pct": 31.6,
+        "small_sample": false
+      },
+      "steamed": {
+        "n": 1544,
+        "avg_fpts": 41.33,
+        "avg_value": 4.843,
+        "ceiling_pct": 33.5,
+        "dud_pct": 42.1,
+        "small_sample": false
+      }
+    },
+    "LIMITED": {
+      "drifted": {
+        "n": 1531,
+        "avg_fpts": 30.06,
+        "avg_value": 3.81,
+        "ceiling_pct": 20.4,
+        "dud_pct": 36.8,
+        "small_sample": false
+      },
+      "stable": {
+        "n": 7228,
+        "avg_fpts": 40.7,
+        "avg_value": 4.93,
+        "ceiling_pct": 30.8,
+        "dud_pct": 31.4,
+        "small_sample": false
+      },
+      "steamed": {
+        "n": 1493,
+        "avg_fpts": 42.16,
+        "avg_value": 4.943,
+        "ceiling_pct": 34.4,
+        "dud_pct": 40.9,
+        "small_sample": false
+      }
+    },
+    "SE": {
+      "drifted": {
+        "n": 176,
+        "avg_fpts": 28.88,
+        "avg_value": 3.73,
+        "ceiling_pct": 18.8,
+        "dud_pct": 31.8,
+        "small_sample": false
+      },
+      "stable": {
+        "n": 680,
+        "avg_fpts": 45.4,
+        "avg_value": 5.519,
+        "ceiling_pct": 35.7,
+        "dud_pct": 28.5,
+        "small_sample": false
+      },
+      "steamed": {
+        "n": 170,
+        "avg_fpts": 62.13,
+        "avg_value": 7.316,
+        "ceiling_pct": 58.2,
+        "dud_pct": 31.8,
+        "small_sample": false
+      }
+    },
+    "20-Max": {
+      "drifted": {
+        "n": 45,
+        "avg_fpts": 3.55,
+        "avg_value": 0.497,
+        "ceiling_pct": 0.0,
+        "dud_pct": 77.8,
+        "small_sample": true
+      },
+      "stable": {
+        "n": 137,
+        "avg_fpts": 18.73,
+        "avg_value": 2.283,
+        "ceiling_pct": 11.7,
+        "dud_pct": 60.6,
+        "small_sample": false
+      },
+      "steamed": {
+        "n": 45,
+        "avg_fpts": 7.4,
+        "avg_value": 0.832,
+        "ceiling_pct": 0.0,
+        "dud_pct": 88.9,
+        "small_sample": true
+      }
+    },
+    "150-Max": {
+      "stable": {
+        "n": 121,
+        "avg_fpts": 29.28,
+        "avg_value": 3.51,
+        "ceiling_pct": 19.0,
+        "dud_pct": 45.5,
+        "small_sample": false
+      }
+    }
+  },
+  "prob_band_x_archetype": {
+    "UNLIMITED": {
+      "Heavy Fav (70%+)": {
+        "n": 1655,
+        "avg_fpts": 51.89,
+        "avg_value": 5.618,
+        "ceiling_pct": 42.4,
+        "dud_pct": 41.1,
+        "small_sample": false
+      },
+      "Mod Fav (55-70%)": {
+        "n": 3021,
+        "avg_fpts": 46.39,
+        "avg_value": 5.334,
+        "ceiling_pct": 35.2,
+        "dud_pct": 33.5,
+        "small_sample": false
+      },
+      "Toss-up (45-55%)": {
+        "n": 1249,
+        "avg_fpts": 40.54,
+        "avg_value": 5.014,
+        "ceiling_pct": 32.4,
+        "dud_pct": 30.9,
+        "small_sample": false
+      },
+      "Mod Dog (30-45%)": {
+        "n": 2980,
+        "avg_fpts": 34.26,
+        "avg_value": 4.562,
+        "ceiling_pct": 25.6,
+        "dud_pct": 31.1,
+        "small_sample": false
+      },
+      "Heavy Dog (<30%)": {
+        "n": 1574,
+        "avg_fpts": 18.48,
+        "avg_value": 2.635,
+        "ceiling_pct": 9.3,
+        "dud_pct": 36.0,
+        "small_sample": false
+      }
+    },
+    "LIMITED": {
+      "Heavy Fav (70%+)": {
+        "n": 1619,
+        "avg_fpts": 52.71,
+        "avg_value": 5.708,
+        "ceiling_pct": 43.1,
+        "dud_pct": 40.5,
+        "small_sample": false
+      },
+      "Mod Fav (55-70%)": {
+        "n": 2963,
+        "avg_fpts": 46.6,
+        "avg_value": 5.359,
+        "ceiling_pct": 35.4,
+        "dud_pct": 33.1,
+        "small_sample": false
+      },
+      "Toss-up (45-55%)": {
+        "n": 1210,
+        "avg_fpts": 41.37,
+        "avg_value": 5.117,
+        "ceiling_pct": 33.3,
+        "dud_pct": 29.8,
+        "small_sample": false
+      },
+      "Mod Dog (30-45%)": {
+        "n": 2920,
+        "avg_fpts": 34.56,
+        "avg_value": 4.603,
+        "ceiling_pct": 25.9,
+        "dud_pct": 30.7,
+        "small_sample": false
+      },
+      "Heavy Dog (<30%)": {
+        "n": 1540,
+        "avg_fpts": 18.66,
+        "avg_value": 2.659,
+        "ceiling_pct": 9.5,
+        "dud_pct": 35.6,
+        "small_sample": false
+      }
+    },
+    "SE": {
+      "Heavy Fav (70%+)": {
+        "n": 149,
+        "avg_fpts": 65.08,
+        "avg_value": 7.045,
+        "ceiling_pct": 59.7,
+        "dud_pct": 30.9,
+        "small_sample": false
+      },
+      "Mod Fav (55-70%)": {
+        "n": 319,
+        "avg_fpts": 53.85,
+        "avg_value": 6.269,
+        "ceiling_pct": 42.6,
+        "dud_pct": 32.3,
+        "small_sample": false
+      },
+      "Toss-up (45-55%)": {
+        "n": 112,
+        "avg_fpts": 50.68,
+        "avg_value": 6.277,
+        "ceiling_pct": 37.5,
+        "dud_pct": 13.4,
+        "small_sample": false
+      },
+      "Mod Dog (30-45%)": {
+        "n": 312,
+        "avg_fpts": 34.12,
+        "avg_value": 4.549,
+        "ceiling_pct": 26.9,
+        "dud_pct": 30.4,
+        "small_sample": false
+      },
+      "Heavy Dog (<30%)": {
+        "n": 134,
+        "avg_fpts": 24.78,
+        "avg_value": 3.592,
+        "ceiling_pct": 17.9,
+        "dud_pct": 33.6,
+        "small_sample": false
+      }
+    },
+    "20-Max": {
+      "Heavy Fav (70%+)": {
+        "n": 39,
+        "avg_fpts": 9.42,
+        "avg_value": 0.983,
+        "ceiling_pct": 7.7,
+        "dud_pct": 79.5,
+        "small_sample": true
+      },
+      "Mod Fav (55-70%)": {
+        "n": 54,
+        "avg_fpts": 23.7,
+        "avg_value": 2.736,
+        "ceiling_pct": 14.8,
+        "dud_pct": 66.7,
+        "small_sample": false
+      },
+      "Toss-up (45-55%)": {
+        "n": 41,
+        "avg_fpts": 9.18,
+        "avg_value": 1.105,
+        "ceiling_pct": 0.0,
+        "dud_pct": 75.6,
+        "small_sample": true
+      },
+      "Mod Dog (30-45%)": {
+        "n": 54,
+        "avg_fpts": 13.5,
+        "avg_value": 1.775,
+        "ceiling_pct": 9.3,
+        "dud_pct": 66.7,
+        "small_sample": false
+      },
+      "Heavy Dog (<30%)": {
+        "n": 39,
+        "avg_fpts": 7.84,
+        "avg_value": 1.163,
+        "ceiling_pct": 0.0,
+        "dud_pct": 61.5,
+        "small_sample": true
+      }
+    },
+    "150-Max": {
+      "Heavy Fav (70%+)": {
+        "n": 20,
+        "avg_fpts": 4.7,
+        "avg_value": 0.49,
+        "ceiling_pct": 0.0,
+        "dud_pct": 75.0,
+        "small_sample": true
+      },
+      "Mod Fav (55-70%)": {
+        "n": 33,
+        "avg_fpts": 76.9,
+        "avg_value": 8.846,
+        "ceiling_pct": 54.5,
+        "dud_pct": 0.0,
+        "small_sample": true
+      },
+      "Toss-up (45-55%)": {
+        "n": 10,
+        "avg_fpts": 0.0,
+        "avg_value": 0.0,
+        "ceiling_pct": 0.0,
+        "dud_pct": 100.0,
+        "small_sample": true
+      },
+      "Mod Dog (30-45%)": {
+        "n": 38,
+        "avg_fpts": 23.97,
+        "avg_value": 3.237,
+        "ceiling_pct": 13.2,
+        "dud_pct": 26.3,
+        "small_sample": true
+      },
+      "Heavy Dog (<30%)": {
+        "n": 20,
+        "avg_fpts": 0.0,
+        "avg_value": 0.0,
+        "ceiling_pct": 0.0,
+        "dud_pct": 100.0,
+        "small_sample": true
+      }
+    }
+  },
+  "card_position_x_archetype": {
+    "UNLIMITED": {
+      "Main Event": {
+        "n": 434,
+        "avg_fpts": 57.34,
+        "avg_value": 6.013,
+        "ceiling_pct": 50.7,
+        "dud_pct": 41.7,
+        "small_sample": false
+      },
+      "Co-Main": {
+        "n": 414,
+        "avg_fpts": 55.0,
+        "avg_value": 5.849,
+        "ceiling_pct": 47.6,
+        "dud_pct": 40.8,
+        "small_sample": false
+      },
+      "Main Card": {
+        "n": 1267,
+        "avg_fpts": 47.96,
+        "avg_value": 5.249,
+        "ceiling_pct": 35.8,
+        "dud_pct": 37.0,
+        "small_sample": false
+      },
+      "Prelim": {
+        "n": 8364,
+        "avg_fpts": 35.8,
+        "avg_value": 4.512,
+        "ceiling_pct": 26.4,
+        "dud_pct": 32.9,
+        "small_sample": false
+      }
+    },
+    "LIMITED": {
+      "Main Event": {
+        "n": 422,
+        "avg_fpts": 58.31,
+        "avg_value": 6.116,
+        "ceiling_pct": 51.7,
+        "dud_pct": 41.7,
+        "small_sample": false
+      },
+      "Co-Main": {
+        "n": 402,
+        "avg_fpts": 56.2,
+        "avg_value": 5.978,
+        "ceiling_pct": 48.5,
+        "dud_pct": 39.6,
+        "small_sample": false
+      },
+      "Main Card": {
+        "n": 1248,
+        "avg_fpts": 48.42,
+        "avg_value": 5.299,
+        "ceiling_pct": 36.2,
+        "dud_pct": 36.4,
+        "small_sample": false
+      },
+      "Prelim": {
+        "n": 8180,
+        "avg_fpts": 36.12,
+        "avg_value": 4.554,
+        "ceiling_pct": 26.7,
+        "dud_pct": 32.4,
+        "small_sample": false
+      }
+    },
+    "SE": {
+      "Main Event": {
+        "n": 43,
+        "avg_fpts": 69.84,
+        "avg_value": 7.345,
+        "ceiling_pct": 65.1,
+        "dud_pct": 30.2,
+        "small_sample": true
+      },
+      "Co-Main": {
+        "n": 41,
+        "avg_fpts": 50.87,
+        "avg_value": 5.419,
+        "ceiling_pct": 43.9,
+        "dud_pct": 48.8,
+        "small_sample": true
+      },
+      "Main Card": {
+        "n": 143,
+        "avg_fpts": 57.55,
+        "avg_value": 6.333,
+        "ceiling_pct": 43.4,
+        "dud_pct": 26.6,
+        "small_sample": false
+      },
+      "Prelim": {
+        "n": 799,
+        "avg_fpts": 41.55,
+        "avg_value": 5.269,
+        "ceiling_pct": 33.4,
+        "dud_pct": 29.2,
+        "small_sample": false
+      }
+    },
+    "20-Max": {
+      "Main Event": {
+        "n": 13,
+        "avg_fpts": 28.27,
+        "avg_value": 2.95,
+        "ceiling_pct": 23.1,
+        "dud_pct": 38.5,
+        "small_sample": true
+      },
+      "Co-Main": {
+        "n": 13,
+        "avg_fpts": 0.0,
+        "avg_value": 0.0,
+        "ceiling_pct": 0.0,
+        "dud_pct": 100.0,
+        "small_sample": true
+      },
+      "Main Card": {
+        "n": 21,
+        "avg_fpts": 0.0,
+        "avg_value": 0.0,
+        "ceiling_pct": 0.0,
+        "dud_pct": 100.0,
+        "small_sample": true
+      },
+      "Prelim": {
+        "n": 180,
+        "avg_fpts": 14.95,
+        "avg_value": 1.857,
+        "ceiling_pct": 7.2,
+        "dud_pct": 66.1,
+        "small_sample": false
+      }
+    },
+    "150-Max": {
+      "Main Event": {
+        "n": 5,
+        "avg_fpts": 18.8,
+        "avg_value": 1.958,
+        "ceiling_pct": 0.0,
+        "dud_pct": 0.0,
+        "small_sample": true
+      },
+      "Co-Main": {
+        "n": 5,
+        "avg_fpts": 0.0,
+        "avg_value": 0.0,
+        "ceiling_pct": 0.0,
+        "dud_pct": 100.0,
+        "small_sample": true
+      },
+      "Main Card": {
+        "n": 15,
+        "avg_fpts": 36.08,
+        "avg_value": 4.009,
+        "ceiling_pct": 33.3,
+        "dud_pct": 66.7,
+        "small_sample": true
+      },
+      "Prelim": {
+        "n": 96,
+        "avg_fpts": 30.29,
+        "avg_value": 3.696,
+        "ceiling_pct": 18.8,
+        "dud_pct": 41.7,
+        "small_sample": false
+      }
+    }
+  },
+  "lineup_composition_x_archetype": {
+    "UNLIMITED": {
+      "Tier S Count": {
+        "0": {
+          "n": 1369868,
+          "roi": 0.9195,
+          "cash_rate": 19.8,
+          "avg_pts": 317.96,
+          "small_sample": false
+        },
+        "1": {
+          "n": 527544,
+          "roi": 1.4115,
+          "cash_rate": 25.2,
+          "avg_pts": 217.87,
+          "small_sample": false
+        },
+        "2": {
+          "n": 290157,
+          "roi": 2.3415,
+          "cash_rate": 29.9,
+          "avg_pts": 235.68,
+          "small_sample": false
+        },
+        "3": {
+          "n": 80604,
+          "roi": 2.9289,
+          "cash_rate": 32.6,
+          "avg_pts": 256.67,
+          "small_sample": false
+        },
+        "4": {
+          "n": 10125,
+          "roi": 3.2876,
+          "cash_rate": 34.3,
+          "avg_pts": 269.53,
+          "small_sample": false
+        },
+        "5": {
+          "n": 465,
+          "roi": 0.8664,
+          "cash_rate": 38.7,
+          "avg_pts": 277.38,
+          "small_sample": false
+        },
+        "6": {
+          "n": 6,
+          "roi": 0.3636,
+          "cash_rate": 50.0,
+          "avg_pts": 302.27,
+          "small_sample": true
+        }
+      },
+      "Tier F Count": {
+        "0": {
+          "n": 1561578,
+          "roi": 1.1706,
+          "cash_rate": 21.1,
+          "avg_pts": 306.65,
+          "small_sample": false
+        },
+        "1": {
+          "n": 481901,
+          "roi": 1.4024,
+          "cash_rate": 25.7,
+          "avg_pts": 216.49,
+          "small_sample": false
+        },
+        "2": {
+          "n": 180898,
+          "roi": 2.1567,
+          "cash_rate": 28.1,
+          "avg_pts": 243.15,
+          "small_sample": false
+        },
+        "3": {
+          "n": 46528,
+          "roi": 1.6595,
+          "cash_rate": 28.4,
+          "avg_pts": 273.33,
+          "small_sample": false
+        },
+        "4": {
+          "n": 7284,
+          "roi": 0.7142,
+          "cash_rate": 31.5,
+          "avg_pts": 319.6,
+          "small_sample": false
+        },
+        "5": {
+          "n": 561,
+          "roi": 0.6453,
+          "cash_rate": 32.3,
+          "avg_pts": 379.25,
+          "small_sample": false
+        },
+        "6": {
+          "n": 19,
+          "roi": 1.2524,
+          "cash_rate": 52.6,
+          "avg_pts": 445.64,
+          "small_sample": true
+        }
+      },
+      "Women Count": {
+        "0": {
+          "n": 1569703,
+          "roi": 0.9958,
+          "cash_rate": 20.5,
+          "avg_pts": 302.64,
+          "small_sample": false
+        },
+        "1": {
+          "n": 506899,
+          "roi": 1.9542,
+          "cash_rate": 27.4,
+          "avg_pts": 228.86,
+          "small_sample": false
+        },
+        "2": {
+          "n": 174370,
+          "roi": 1.8029,
+          "cash_rate": 30.1,
+          "avg_pts": 251.1,
+          "small_sample": false
+        },
+        "3": {
+          "n": 26479,
+          "roi": 3.3053,
+          "cash_rate": 29.3,
+          "avg_pts": 270.73,
+          "small_sample": false
+        },
+        "4": {
+          "n": 1280,
+          "roi": 0.895,
+          "cash_rate": 27.4,
+          "avg_pts": 311.72,
+          "small_sample": false
+        },
+        "5": {
+          "n": 33,
+          "roi": 0.901,
+          "cash_rate": 30.3,
+          "avg_pts": 296.51,
+          "small_sample": true
+        },
+        "6": {
+          "n": 5,
+          "roi": 0.48,
+          "cash_rate": 60.0,
+          "avg_pts": 306.94,
+          "small_sample": true
+        }
+      }
+    },
+    "LIMITED": {
+      "Tier S Count": {
+        "0": {
+          "n": 11067,
+          "roi": 0.8425,
+          "cash_rate": 18.2,
+          "avg_pts": 260.68,
+          "small_sample": false
+        },
+        "1": {
+          "n": 7815,
+          "roi": 1.041,
+          "cash_rate": 22.1,
+          "avg_pts": 217.19,
+          "small_sample": false
+        },
+        "2": {
+          "n": 3654,
+          "roi": 1.448,
+          "cash_rate": 26.8,
+          "avg_pts": 244.06,
+          "small_sample": false
+        },
+        "3": {
+          "n": 827,
+          "roi": 1.5255,
+          "cash_rate": 25.9,
+          "avg_pts": 267.34,
+          "small_sample": false
+        },
+        "4": {
+          "n": 82,
+          "roi": 3.0224,
+          "cash_rate": 24.4,
+          "avg_pts": 280.35,
+          "small_sample": false
+        },
+        "5": {
+          "n": 1,
+          "roi": 0.0,
+          "cash_rate": 0.0,
+          "avg_pts": 186.64,
+          "small_sample": true
+        }
+      },
+      "Tier F Count": {
+        "0": {
+          "n": 13065,
+          "roi": 0.94,
+          "cash_rate": 20.4,
+          "avg_pts": 254.74,
+          "small_sample": false
+        },
+        "1": {
+          "n": 6835,
+          "roi": 1.1296,
+          "cash_rate": 20.5,
+          "avg_pts": 216.23,
+          "small_sample": false
+        },
+        "2": {
+          "n": 2822,
+          "roi": 1.1318,
+          "cash_rate": 24.6,
+          "avg_pts": 252.12,
+          "small_sample": false
+        },
+        "3": {
+          "n": 639,
+          "roi": 1.4678,
+          "cash_rate": 26.6,
+          "avg_pts": 274.62,
+          "small_sample": false
+        },
+        "4": {
+          "n": 84,
+          "roi": 1.4929,
+          "cash_rate": 32.1,
+          "avg_pts": 297.87,
+          "small_sample": false
+        },
+        "5": {
+          "n": 1,
+          "roi": 0.0,
+          "cash_rate": 0.0,
+          "avg_pts": 314.36,
+          "small_sample": true
+        }
+      },
+      "Women Count": {
+        "0": {
+          "n": 14201,
+          "roi": 0.857,
+          "cash_rate": 19.2,
+          "avg_pts": 249.25,
+          "small_sample": false
+        },
+        "1": {
+          "n": 6874,
+          "roi": 1.2601,
+          "cash_rate": 23.2,
+          "avg_pts": 228.46,
+          "small_sample": false
+        },
+        "2": {
+          "n": 2051,
+          "roi": 1.4412,
+          "cash_rate": 27.3,
+          "avg_pts": 251.23,
+          "small_sample": false
+        },
+        "3": {
+          "n": 302,
+          "roi": 1.533,
+          "cash_rate": 24.2,
+          "avg_pts": 284.19,
+          "small_sample": false
+        },
+        "4": {
+          "n": 18,
+          "roi": 0.4505,
+          "cash_rate": 16.7,
+          "avg_pts": 401.44,
+          "small_sample": true
+        }
+      }
+    },
+    "SE": {
+      "Tier S Count": {
+        "0": {
+          "n": 38,
+          "roi": 1.209,
+          "cash_rate": 26.3,
+          "avg_pts": 351.81,
+          "small_sample": true
+        },
+        "1": {
+          "n": 14,
+          "roi": 0.4043,
+          "cash_rate": 14.3,
+          "avg_pts": 160.15,
+          "small_sample": true
+        },
+        "2": {
+          "n": 10,
+          "roi": 1.7689,
+          "cash_rate": 30.0,
+          "avg_pts": 142.5,
+          "small_sample": true
+        },
+        "3": {
+          "n": 1,
+          "roi": 0.0,
+          "cash_rate": 0.0,
+          "avg_pts": 84.59,
+          "small_sample": true
+        }
+      },
+      "Tier F Count": {
+        "0": {
+          "n": 57,
+          "roi": 1.1082,
+          "cash_rate": 22.8,
+          "avg_pts": 274.83,
+          "small_sample": false
+        },
+        "1": {
+          "n": 6,
+          "roi": 0.7272,
+          "cash_rate": 33.3,
+          "avg_pts": 242.48,
+          "small_sample": true
+        }
+      },
+      "Women Count": {
+        "0": {
+          "n": 46,
+          "roi": 1.1017,
+          "cash_rate": 23.9,
+          "avg_pts": 331.18,
+          "small_sample": true
+        },
+        "1": {
+          "n": 9,
+          "roi": 1.1006,
+          "cash_rate": 33.3,
+          "avg_pts": 128.88,
+          "small_sample": true
+        },
+        "2": {
+          "n": 7,
+          "roi": 0.6907,
+          "cash_rate": 14.3,
+          "avg_pts": 91.66,
+          "small_sample": true
+        },
+        "3": {
+          "n": 1,
+          "roi": 0.0,
+          "cash_rate": 0.0,
+          "avg_pts": 84.59,
+          "small_sample": true
+        }
+      }
+    },
+    "20-Max": {
+      "Tier S Count": {
+        "0": {
+          "n": 966,
+          "roi": 0.8166,
+          "cash_rate": 31.3,
+          "avg_pts": 205.51,
+          "small_sample": false
+        },
+        "1": {
+          "n": 616,
+          "roi": 0.5934,
+          "cash_rate": 24.2,
+          "avg_pts": 138.51,
+          "small_sample": false
+        },
+        "2": {
+          "n": 118,
+          "roi": 2.6993,
+          "cash_rate": 39.0,
+          "avg_pts": 129.12,
+          "small_sample": false
+        },
+        "3": {
+          "n": 1,
+          "roi": 2.7027,
+          "cash_rate": 100.0,
+          "avg_pts": 222.19,
+          "small_sample": true
+        }
+      },
+      "Tier F Count": {
+        "0": {
+          "n": 913,
+          "roi": 0.7026,
+          "cash_rate": 17.9,
+          "avg_pts": 141.86,
+          "small_sample": false
+        },
+        "1": {
+          "n": 767,
+          "roi": 0.6699,
+          "cash_rate": 41.1,
+          "avg_pts": 217.13,
+          "small_sample": false
+        },
+        "2": {
+          "n": 21,
+          "roi": 11.4829,
+          "cash_rate": 95.2,
+          "avg_pts": 154.51,
+          "small_sample": true
+        }
+      },
+      "Women Count": {
+        "0": {
+          "n": 1227,
+          "roi": 0.6034,
+          "cash_rate": 27.5,
+          "avg_pts": 179.3,
+          "small_sample": false
+        },
+        "1": {
+          "n": 468,
+          "roi": 1.8488,
+          "cash_rate": 34.4,
+          "avg_pts": 166.98,
+          "small_sample": false
+        },
+        "2": {
+          "n": 6,
+          "roi": 0.0,
+          "cash_rate": 0.0,
+          "avg_pts": 191.72,
+          "small_sample": true
+        }
+      }
+    },
+    "150-Max": {
+      "Tier S Count": {
+        "0": {
+          "n": 852,
+          "roi": 0.4779,
+          "cash_rate": 23.1,
+          "avg_pts": 182.1,
+          "small_sample": false
+        },
+        "1": {
+          "n": 1664,
+          "roi": 9.1577,
+          "cash_rate": 32.9,
+          "avg_pts": 203.55,
+          "small_sample": false
+        },
+        "2": {
+          "n": 350,
+          "roi": 0.4882,
+          "cash_rate": 25.1,
+          "avg_pts": 192.76,
+          "small_sample": false
+        },
+        "3": {
+          "n": 6,
+          "roi": 0.0,
+          "cash_rate": 0.0,
+          "avg_pts": 178.15,
+          "small_sample": true
+        }
+      },
+      "Tier F Count": {
+        "0": {
+          "n": 959,
+          "roi": 0.218,
+          "cash_rate": 9.8,
+          "avg_pts": 156.3,
+          "small_sample": false
+        },
+        "1": {
+          "n": 1399,
+          "roi": 9.6445,
+          "cash_rate": 32.7,
+          "avg_pts": 203.27,
+          "small_sample": false
+        },
+        "2": {
+          "n": 502,
+          "roi": 6.4516,
+          "cash_rate": 54.2,
+          "avg_pts": 248.04,
+          "small_sample": false
+        },
+        "3": {
+          "n": 12,
+          "roi": 3.6522,
+          "cash_rate": 83.3,
+          "avg_pts": 300.55,
+          "small_sample": true
+        }
+      },
+      "Women Count": {
+        "0": {
+          "n": 852,
+          "roi": 0.5025,
+          "cash_rate": 24.2,
+          "avg_pts": 176.55,
+          "small_sample": false
+        },
+        "1": {
+          "n": 1659,
+          "roi": 2.0859,
+          "cash_rate": 31.3,
+          "avg_pts": 204.22,
+          "small_sample": false
+        },
+        "2": {
+          "n": 355,
+          "roi": 40.1971,
+          "cash_rate": 30.4,
+          "avg_pts": 203.09,
+          "small_sample": false
+        },
+        "3": {
+          "n": 6,
+          "roi": 0.0,
+          "cash_rate": 0.0,
+          "avg_pts": 178.15,
+          "small_sample": true
+        }
+      }
+    }
+  },
+  "field_size_x_line_movement": {
+    "Large (20K-50K)": {
+      "drifted": {
+        "n": 911,
+        "avg_fpts": 31.18,
+        "avg_value": 3.989,
+        "ceiling_pct": 20.3,
+        "small_sample": false
+      },
+      "stable": {
+        "n": 4513,
+        "avg_fpts": 41.54,
+        "avg_value": 5.03,
+        "ceiling_pct": 31.6,
+        "small_sample": false
+      },
+      "steamed": {
+        "n": 872,
+        "avg_fpts": 45.69,
+        "avg_value": 5.313,
+        "ceiling_pct": 37.4,
+        "small_sample": false
+      }
+    },
+    "Mega (50K+)": {
+      "drifted": {
+        "n": 671,
+        "avg_fpts": 26.67,
+        "avg_value": 3.336,
+        "ceiling_pct": 19.1,
+        "small_sample": false
+      },
+      "stable": {
+        "n": 2840,
+        "avg_fpts": 38.82,
+        "avg_value": 4.707,
+        "ceiling_pct": 29.0,
+        "small_sample": false
+      },
+      "steamed": {
+        "n": 672,
+        "avg_fpts": 35.68,
+        "avg_value": 4.232,
+        "ceiling_pct": 28.6,
+        "small_sample": false
+      }
+    }
+  },
+  "effective_entries_x_ownership": {
+    "0.1-1%": {
+      "<100%": {
+        "roi": 0.0144,
+        "n": 925,
+        "small_sample": false
+      },
+      "100-125%": {
+        "roi": 0.2859,
+        "n": 566,
+        "small_sample": false
+      },
+      "125-150%": {
+        "roi": 0.7255,
+        "n": 400,
+        "small_sample": false
+      },
+      "150-175%": {
+        "roi": 1.5639,
+        "n": 194,
+        "small_sample": false
+      },
+      "175-200%": {
+        "roi": 99.6077,
+        "n": 109,
+        "small_sample": false
+      },
+      "200%+": {
+        "roi": 9.7083,
+        "n": 28,
+        "small_sample": true
+      }
+    },
+    "1-5%": {
+      "<100%": {
+        "roi": 0.6249,
+        "n": 310686,
+        "small_sample": false
+      },
+      "100-125%": {
+        "roi": 1.552,
+        "n": 343004,
+        "small_sample": false
+      },
+      "125-150%": {
+        "roi": 1.2642,
+        "n": 480044,
+        "small_sample": false
+      },
+      "150-175%": {
+        "roi": 1.1956,
+        "n": 438705,
+        "small_sample": false
+      },
+      "175-200%": {
+        "roi": 1.2877,
+        "n": 204696,
+        "small_sample": false
+      },
+      "200%+": {
+        "roi": 1.1951,
+        "n": 64408,
+        "small_sample": false
+      }
+    },
+    "5-10%": {
+      "<100%": {
+        "roi": 0.4041,
+        "n": 44503,
+        "small_sample": false
+      },
+      "100-125%": {
+        "roi": 1.5202,
+        "n": 45133,
+        "small_sample": false
+      },
+      "125-150%": {
+        "roi": 0.9456,
+        "n": 64413,
+        "small_sample": false
+      },
+      "150-175%": {
+        "roi": 1.6143,
+        "n": 70812,
+        "small_sample": false
+      },
+      "175-200%": {
+        "roi": 1.2305,
+        "n": 44172,
+        "small_sample": false
+      },
+      "200%+": {
+        "roi": 1.2569,
+        "n": 16012,
+        "small_sample": false
+      }
+    },
+    "10-50%": {
+      "<100%": {
+        "roi": 0.6982,
+        "n": 20986,
+        "small_sample": false
+      },
+      "100-125%": {
+        "roi": 1.0725,
+        "n": 27508,
+        "small_sample": false
+      },
+      "125-150%": {
+        "roi": 0.831,
+        "n": 43142,
+        "small_sample": false
+      },
+      "150-175%": {
+        "roi": 1.1534,
+        "n": 48799,
+        "small_sample": false
+      },
+      "175-200%": {
+        "roi": 1.1403,
+        "n": 30693,
+        "small_sample": false
+      },
+      "200%+": {
+        "roi": 1.1927,
+        "n": 11060,
+        "small_sample": false
+      }
+    },
+    "50%+": {
+      "<100%": {
+        "roi": 0.3932,
+        "n": 39,
+        "small_sample": true
+      },
+      "100-125%": {
+        "roi": 0.2631,
+        "n": 185,
+        "small_sample": false
+      },
+      "125-150%": {
+        "roi": 0.4232,
+        "n": 330,
+        "small_sample": false
+      },
+      "150-175%": {
+        "roi": 0.8159,
+        "n": 440,
+        "small_sample": false
+      },
+      "175-200%": {
+        "roi": 1.6629,
+        "n": 298,
+        "small_sample": false
+      },
+      "200%+": {
+        "roi": 0.8658,
+        "n": 77,
+        "small_sample": false
+      }
+    }
+  }
+}
