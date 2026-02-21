@@ -1,0 +1,927 @@
+{
+  "part_a": {
+    "performance_by_prob_band": {
+      "Heavy Fav (70%+)": {
+        "n": 598,
+        "avg_fpts": 54.53,
+        "fpts_per_1k": 5.903,
+        "avg_salary": 9272.0,
+        "avg_ownership": 21.83,
+        "ceiling_rate": 0.3127,
+        "rate_100_plus": 0.1923,
+        "dud_rate": 0.2742
+      },
+      "Mod Fav (55-70%)": {
+        "n": 1177,
+        "avg_fpts": 48.47,
+        "fpts_per_1k": 5.566,
+        "avg_salary": 8710.0,
+        "avg_ownership": 21.42,
+        "ceiling_rate": 0.2489,
+        "rate_100_plus": 0.13,
+        "dud_rate": 0.2336
+      },
+      "Toss-up (45-55%)": {
+        "n": 493,
+        "avg_fpts": 42.32,
+        "fpts_per_1k": 5.232,
+        "avg_salary": 8107.0,
+        "avg_ownership": 21.74,
+        "ceiling_rate": 0.2353,
+        "rate_100_plus": 0.1197,
+        "dud_rate": 0.2677
+      },
+      "Mod Dog (30-45%)": {
+        "n": 1183,
+        "avg_fpts": 36.13,
+        "fpts_per_1k": 4.814,
+        "avg_salary": 7500.0,
+        "avg_ownership": 18.44,
+        "ceiling_rate": 0.1809,
+        "rate_100_plus": 0.0769,
+        "dud_rate": 0.2561
+      },
+      "Heavy Dog (<30%)": {
+        "n": 593,
+        "avg_fpts": 19.46,
+        "fpts_per_1k": 2.779,
+        "avg_salary": 6935.0,
+        "avg_ownership": 11.6,
+        "ceiling_rate": 0.0691,
+        "rate_100_plus": 0.0202,
+        "dud_rate": 0.3524
+      }
+    },
+    "outscore_rate": {
+      "Heavy Fav (70%+)": {
+        "n": 598,
+        "outscore_rate": 0.3846,
+        "avg_implied_prob": 0.7683,
+        "delta": -0.3837
+      },
+      "Mod Fav (55-70%)": {
+        "n": 1177,
+        "outscore_rate": 0.3543,
+        "avg_implied_prob": 0.6262,
+        "delta": -0.2719
+      },
+      "Toss-up (45-55%)": {
+        "n": 493,
+        "outscore_rate": 0.3266,
+        "avg_implied_prob": 0.5004,
+        "delta": -0.1738
+      },
+      "Mod Dog (30-45%)": {
+        "n": 1183,
+        "outscore_rate": 0.2866,
+        "avg_implied_prob": 0.3736,
+        "delta": -0.0871
+      },
+      "Heavy Dog (<30%)": {
+        "n": 593,
+        "outscore_rate": 0.204,
+        "avg_implied_prob": 0.2318,
+        "delta": -0.0278
+      }
+    },
+    "line_movement": {
+      "by_direction": {
+        "steamed": {
+          "n": 466,
+          "avg_fpts": 44.18,
+          "fpts_per_1k": 5.165,
+          "ceiling_rate": 0.3004,
+          "avg_ownership": 24.82
+        },
+        "stable": {
+          "n": 3082,
+          "avg_fpts": 41.97,
+          "fpts_per_1k": 5.093,
+          "ceiling_rate": 0.2028,
+          "avg_ownership": 17.87
+        },
+        "drifted": {
+          "n": 478,
+          "avg_fpts": 31.51,
+          "fpts_per_1k": 4.002,
+          "ceiling_rate": 0.1799,
+          "avg_ownership": 20.19
+        }
+      },
+      "by_magnitude": {
+        "steamed_small (2-5pp)": {
+          "n": 271,
+          "avg_fpts": 45.45,
+          "fpts_per_1k": 5.286,
+          "ceiling_rate": 0.3063,
+          "avg_ownership": 23.65
+        },
+        "steamed_medium (5-10pp)": {
+          "n": 139,
+          "avg_fpts": 37.91,
+          "fpts_per_1k": 4.415,
+          "ceiling_rate": 0.2446,
+          "avg_ownership": 27.1
+        },
+        "steamed_large (10-20pp)": {
+          "n": 41,
+          "avg_fpts": 46.69,
+          "fpts_per_1k": 5.333,
+          "ceiling_rate": 0.3415,
+          "avg_ownership": 24.1
+        },
+        "steamed_huge (20pp+)": {
+          "n": 15,
+          "avg_fpts": 69.92,
+          "fpts_per_1k": 8.995,
+          "ceiling_rate": 0.6,
+          "avg_ownership": 25.29
+        }
+      }
+    },
+    "cross_tabs": {
+      "prob_x_weight_class": {
+        "Heavy Fav (70%+)": {
+          "Bantamweight": {
+            "n": 34,
+            "fpts_per_1k": 4.933
+          },
+          "Catch Weight": {
+            "n": 5,
+            "fpts_per_1k": 6.219
+          },
+          "Featherweight": {
+            "n": 23,
+            "fpts_per_1k": 6.003
+          },
+          "Flyweight": {
+            "n": 21,
+            "fpts_per_1k": 5.655
+          },
+          "Heavyweight": {
+            "n": 22,
+            "fpts_per_1k": 3.137
+          },
+          "Light Heavyweight": {
+            "n": 15,
+            "fpts_per_1k": 3.713
+          },
+          "Lightweight": {
+            "n": 31,
+            "fpts_per_1k": 4.651
+          },
+          "Middleweight": {
+            "n": 43,
+            "fpts_per_1k": 3.887
+          },
+          "Unknown": null,
+          "Welterweight": {
+            "n": 27,
+            "fpts_per_1k": 3.79
+          },
+          "Women's Bantamweight": {
+            "n": 8,
+            "fpts_per_1k": 4.882
+          },
+          "Women's Featherweight": null,
+          "Women's Flyweight": {
+            "n": 20,
+            "fpts_per_1k": 4.956
+          },
+          "Women's Strawweight": {
+            "n": 22,
+            "fpts_per_1k": 5.148
+          }
+        },
+        "Mod Fav (55-70%)": {
+          "Bantamweight": {
+            "n": 70,
+            "fpts_per_1k": 3.775
+          },
+          "Catch Weight": {
+            "n": 9,
+            "fpts_per_1k": 8.716
+          },
+          "Featherweight": {
+            "n": 64,
+            "fpts_per_1k": 5.169
+          },
+          "Flyweight": {
+            "n": 33,
+            "fpts_per_1k": 3.935
+          },
+          "Heavyweight": {
+            "n": 37,
+            "fpts_per_1k": 3.92
+          },
+          "Light Heavyweight": {
+            "n": 26,
+            "fpts_per_1k": 5.682
+          },
+          "Lightweight": {
+            "n": 59,
+            "fpts_per_1k": 4.124
+          },
+          "Middleweight": {
+            "n": 61,
+            "fpts_per_1k": 4.967
+          },
+          "Unknown": {
+            "n": 15,
+            "fpts_per_1k": 4.495
+          },
+          "Welterweight": {
+            "n": 66,
+            "fpts_per_1k": 5.2
+          },
+          "Women's Bantamweight": {
+            "n": 22,
+            "fpts_per_1k": 5.487
+          },
+          "Women's Featherweight": null,
+          "Women's Flyweight": {
+            "n": 26,
+            "fpts_per_1k": 5.757
+          },
+          "Women's Strawweight": {
+            "n": 31,
+            "fpts_per_1k": 5.341
+          }
+        },
+        "Toss-up (45-55%)": {
+          "Bantamweight": {
+            "n": 24,
+            "fpts_per_1k": 2.908
+          },
+          "Catch Weight": null,
+          "Featherweight": {
+            "n": 23,
+            "fpts_per_1k": 2.901
+          },
+          "Flyweight": {
+            "n": 11,
+            "fpts_per_1k": 5.133
+          },
+          "Heavyweight": {
+            "n": 19,
+            "fpts_per_1k": 5.378
+          },
+          "Light Heavyweight": {
+            "n": 27,
+            "fpts_per_1k": 3.652
+          },
+          "Lightweight": {
+            "n": 24,
+            "fpts_per_1k": 3.931
+          },
+          "Middleweight": {
+            "n": 24,
+            "fpts_per_1k": 5.119
+          },
+          "Unknown": null,
+          "Welterweight": {
+            "n": 19,
+            "fpts_per_1k": 5.031
+          },
+          "Women's Bantamweight": {
+            "n": 8,
+            "fpts_per_1k": 1.597
+          },
+          "Women's Featherweight": null,
+          "Women's Flyweight": {
+            "n": 10,
+            "fpts_per_1k": 4.032
+          },
+          "Women's Strawweight": {
+            "n": 12,
+            "fpts_per_1k": 6.81
+          }
+        },
+        "Mod Dog (30-45%)": {
+          "Bantamweight": {
+            "n": 75,
+            "fpts_per_1k": 2.872
+          },
+          "Catch Weight": {
+            "n": 12,
+            "fpts_per_1k": 4.488
+          },
+          "Featherweight": {
+            "n": 59,
+            "fpts_per_1k": 4.303
+          },
+          "Flyweight": {
+            "n": 31,
+            "fpts_per_1k": 2.788
+          },
+          "Heavyweight": {
+            "n": 32,
+            "fpts_per_1k": 4.019
+          },
+          "Light Heavyweight": {
+            "n": 31,
+            "fpts_per_1k": 3.812
+          },
+          "Lightweight": {
+            "n": 65,
+            "fpts_per_1k": 5.447
+          },
+          "Middleweight": {
+            "n": 57,
+            "fpts_per_1k": 3.786
+          },
+          "Unknown": {
+            "n": 14,
+            "fpts_per_1k": 5.498
+          },
+          "Welterweight": {
+            "n": 69,
+            "fpts_per_1k": 4.779
+          },
+          "Women's Bantamweight": {
+            "n": 24,
+            "fpts_per_1k": 4.067
+          },
+          "Women's Featherweight": null,
+          "Women's Flyweight": {
+            "n": 26,
+            "fpts_per_1k": 4.802
+          },
+          "Women's Strawweight": {
+            "n": 27,
+            "fpts_per_1k": 5.091
+          }
+        },
+        "Heavy Dog (<30%)": {
+          "Bantamweight": {
+            "n": 26,
+            "fpts_per_1k": 2.83
+          },
+          "Catch Weight": {
+            "n": 5,
+            "fpts_per_1k": 4.846
+          },
+          "Featherweight": {
+            "n": 25,
+            "fpts_per_1k": 1.8
+          },
+          "Flyweight": {
+            "n": 22,
+            "fpts_per_1k": 1.751
+          },
+          "Heavyweight": {
+            "n": 15,
+            "fpts_per_1k": 2.307
+          },
+          "Light Heavyweight": {
+            "n": 28,
+            "fpts_per_1k": 2.179
+          },
+          "Lightweight": {
+            "n": 31,
+            "fpts_per_1k": 1.388
+          },
+          "Middleweight": {
+            "n": 40,
+            "fpts_per_1k": 2.144
+          },
+          "Unknown": {
+            "n": 8,
+            "fpts_per_1k": 1.232
+          },
+          "Welterweight": {
+            "n": 27,
+            "fpts_per_1k": 2.854
+          },
+          "Women's Bantamweight": {
+            "n": 8,
+            "fpts_per_1k": 1.856
+          },
+          "Women's Featherweight": null,
+          "Women's Flyweight": {
+            "n": 16,
+            "fpts_per_1k": 1.408
+          },
+          "Women's Strawweight": {
+            "n": 24,
+            "fpts_per_1k": 2.168
+          }
+        }
+      },
+      "prob_x_line_move": {
+        "Heavy Fav (70%+)": {
+          "steamed": {
+            "n": 140,
+            "fpts_per_1k": 5.964
+          },
+          "stable": {
+            "n": 444,
+            "fpts_per_1k": 5.87
+          },
+          "drifted": {
+            "n": 13,
+            "fpts_per_1k": 6.068
+          }
+        },
+        "Mod Fav (55-70%)": {
+          "steamed": {
+            "n": 163,
+            "fpts_per_1k": 5.36
+          },
+          "stable": {
+            "n": 931,
+            "fpts_per_1k": 5.592
+          },
+          "drifted": {
+            "n": 77,
+            "fpts_per_1k": 5.739
+          }
+        },
+        "Toss-up (45-55%)": {
+          "steamed": {
+            "n": 72,
+            "fpts_per_1k": 5.178
+          },
+          "stable": {
+            "n": 341,
+            "fpts_per_1k": 5.53
+          },
+          "drifted": {
+            "n": 75,
+            "fpts_per_1k": 4.208
+          }
+        },
+        "Mod Dog (30-45%)": {
+          "steamed": {
+            "n": 77,
+            "fpts_per_1k": 3.253
+          },
+          "stable": {
+            "n": 934,
+            "fpts_per_1k": 5.164
+          },
+          "drifted": {
+            "n": 167,
+            "fpts_per_1k": 4.031
+          }
+        },
+        "Heavy Dog (<30%)": {
+          "steamed": {
+            "n": 14,
+            "fpts_per_1k": 4.09
+          },
+          "stable": {
+            "n": 432,
+            "fpts_per_1k": 2.699
+          },
+          "drifted": {
+            "n": 146,
+            "fpts_per_1k": 2.847
+          }
+        }
+      },
+      "prob_x_card_section": {
+        "Heavy Fav (70%+)": {
+          "co_main": {
+            "n": 88,
+            "fpts_per_1k": 5.798
+          },
+          "main_card": {
+            "n": 168,
+            "fpts_per_1k": 5.286
+          },
+          "main_event": {
+            "n": 99,
+            "fpts_per_1k": 6.441
+          },
+          "prelim": {
+            "n": 65,
+            "fpts_per_1k": 6.82
+          }
+        },
+        "Mod Fav (55-70%)": {
+          "co_main": {
+            "n": 14,
+            "fpts_per_1k": 6.697
+          },
+          "main_card": {
+            "n": 153,
+            "fpts_per_1k": 5.614
+          },
+          "main_event": {
+            "n": 7,
+            "fpts_per_1k": 6.636
+          },
+          "prelim": {
+            "n": 614,
+            "fpts_per_1k": 5.516
+          }
+        },
+        "Toss-up (45-55%)": {
+          "co_main": null,
+          "main_card": null,
+          "main_event": null,
+          "prelim": {
+            "n": 335,
+            "fpts_per_1k": 5.22
+          }
+        },
+        "Mod Dog (30-45%)": {
+          "co_main": null,
+          "main_card": null,
+          "main_event": null,
+          "prelim": {
+            "n": 787,
+            "fpts_per_1k": 4.802
+          }
+        },
+        "Heavy Dog (<30%)": {
+          "co_main": null,
+          "main_card": null,
+          "main_event": null,
+          "prelim": {
+            "n": 410,
+            "fpts_per_1k": 2.775
+          }
+        }
+      },
+      "prob_x_gender": {
+        "Heavy Fav (70%+)": {
+          "Men": {
+            "n": 548,
+            "fpts_per_1k": 6.021
+          },
+          "Women": {
+            "n": 50,
+            "fpts_per_1k": 5.029
+          }
+        },
+        "Mod Fav (55-70%)": {
+          "Men": {
+            "n": 1098,
+            "fpts_per_1k": 5.571
+          },
+          "Women": {
+            "n": 79,
+            "fpts_per_1k": 5.519
+          }
+        },
+        "Toss-up (45-55%)": {
+          "Men": {
+            "n": 463,
+            "fpts_per_1k": 5.303
+          },
+          "Women": {
+            "n": 30,
+            "fpts_per_1k": 4.494
+          }
+        },
+        "Mod Dog (30-45%)": {
+          "Men": {
+            "n": 1106,
+            "fpts_per_1k": 4.829
+          },
+          "Women": {
+            "n": 77,
+            "fpts_per_1k": 4.674
+          }
+        },
+        "Heavy Dog (<30%)": {
+          "Men": {
+            "n": 544,
+            "fpts_per_1k": 2.908
+          },
+          "Women": {
+            "n": 49,
+            "fpts_per_1k": 1.825
+          }
+        }
+      }
+    },
+    "summary": {
+      "total_fighter_events": 4044,
+      "unique_dates": 211,
+      "unique_fighters": 924,
+      "pct_with_open_prob": 0.9955,
+      "avg_close_prob": 0.5002
+    }
+  },
+  "part_b": {
+    "roi_by_fav_count": {
+      "0": {
+        "n": 1005,
+        "roi": 0.369,
+        "cash_rate": 0.1463,
+        "avg_points": 250.97,
+        "avg_close_prob": 0.3538
+      },
+      "1": {
+        "n": 8644,
+        "roi": 0.498,
+        "cash_rate": 0.173,
+        "avg_points": 311.7,
+        "avg_close_prob": 0.4271
+      },
+      "2": {
+        "n": 71036,
+        "roi": 1.049,
+        "cash_rate": 0.2153,
+        "avg_points": 339.69,
+        "avg_close_prob": 0.485
+      },
+      "3": {
+        "n": 288886,
+        "roi": 1.3943,
+        "cash_rate": 0.2408,
+        "avg_points": 345.83,
+        "avg_close_prob": 0.5212
+      },
+      "4": {
+        "n": 249875,
+        "roi": 1.8388,
+        "cash_rate": 0.2738,
+        "avg_points": 353.36,
+        "avg_close_prob": 0.5399
+      },
+      "5": {
+        "n": 29371,
+        "roi": 2.3358,
+        "cash_rate": 0.3042,
+        "avg_points": 355.61,
+        "avg_close_prob": 0.5603
+      },
+      "6": {
+        "n": 470,
+        "roi": 1.3154,
+        "cash_rate": 0.366,
+        "avg_points": 339.59,
+        "avg_close_prob": 0.6142
+      }
+    },
+    "roi_by_heavy_fav_count": {
+      "0": {
+        "n": 196658,
+        "roi": 1.6459,
+        "cash_rate": 0.2492,
+        "avg_points": 329.65,
+        "avg_close_prob": 0.5073
+      },
+      "1": {
+        "n": 296878,
+        "roi": 1.3097,
+        "cash_rate": 0.2481,
+        "avg_points": 348.05,
+        "avg_close_prob": 0.5264
+      },
+      "2": {
+        "n": 139083,
+        "roi": 1.8179,
+        "cash_rate": 0.266,
+        "avg_points": 371.6,
+        "avg_close_prob": 0.5422
+      },
+      "3": {
+        "n": 16528,
+        "roi": 2.7385,
+        "cash_rate": 0.2608,
+        "avg_points": 363.43,
+        "avg_close_prob": 0.5556
+      },
+      "4": {
+        "n": 140,
+        "roi": 0.5293,
+        "cash_rate": 0.2,
+        "avg_points": 255.41,
+        "avg_close_prob": 0.5933
+      }
+    },
+    "fav_count_x_archetype": {
+      "0": {
+        "SE": null,
+        "LIMITED": null,
+        "20-Max": null,
+        "150-Max": null,
+        "UNLIMITED": {
+          "n": 1005,
+          "roi": 0.369
+        }
+      },
+      "1": {
+        "SE": null,
+        "LIMITED": null,
+        "20-Max": null,
+        "150-Max": null,
+        "UNLIMITED": {
+          "n": 8640,
+          "roi": 0.4982
+        }
+      },
+      "2": {
+        "SE": null,
+        "LIMITED": {
+          "n": 161,
+          "roi": 1.6955
+        },
+        "20-Max": null,
+        "150-Max": null,
+        "UNLIMITED": {
+          "n": 70874,
+          "roi": 1.0475
+        }
+      },
+      "3": {
+        "SE": null,
+        "LIMITED": {
+          "n": 1470,
+          "roi": 1.2635
+        },
+        "20-Max": null,
+        "150-Max": null,
+        "UNLIMITED": {
+          "n": 287395,
+          "roi": 1.3949
+        }
+      },
+      "4": {
+        "SE": null,
+        "LIMITED": {
+          "n": 1868,
+          "roi": 1.7432
+        },
+        "20-Max": null,
+        "150-Max": null,
+        "UNLIMITED": {
+          "n": 247976,
+          "roi": 1.8279
+        }
+      },
+      "5": {
+        "SE": null,
+        "LIMITED": {
+          "n": 356,
+          "roi": 2.2476
+        },
+        "20-Max": null,
+        "150-Max": null,
+        "UNLIMITED": {
+          "n": 29014,
+          "roi": 2.337
+        }
+      },
+      "6": {
+        "SE": null,
+        "LIMITED": null,
+        "20-Max": null,
+        "150-Max": null,
+        "UNLIMITED": {
+          "n": 453,
+          "roi": 1.3149
+        }
+      }
+    },
+    "fav_count_x_fee_tier": {
+      "0": {
+        "MICRO ($1-3)": {
+          "n": 572,
+          "roi": 0.4085
+        },
+        "LOW ($5-8)": {
+          "n": 79,
+          "roi": 0.1212
+        },
+        "MID ($15-20)": {
+          "n": 224,
+          "roi": 0.5236
+        },
+        "HIGH ($25-30)": {
+          "n": 130,
+          "roi": 0.0797
+        }
+      },
+      "1": {
+        "MICRO ($1-3)": {
+          "n": 4475,
+          "roi": 0.5179
+        },
+        "LOW ($5-8)": {
+          "n": 980,
+          "roi": 0.3868
+        },
+        "MID ($15-20)": {
+          "n": 1811,
+          "roi": 0.7711
+        },
+        "HIGH ($25-30)": {
+          "n": 1378,
+          "roi": 0.1534
+        }
+      },
+      "2": {
+        "MICRO ($1-3)": {
+          "n": 34056,
+          "roi": 0.9217
+        },
+        "LOW ($5-8)": {
+          "n": 9048,
+          "roi": 1.0399
+        },
+        "MID ($15-20)": {
+          "n": 16606,
+          "roi": 1.2679
+        },
+        "HIGH ($25-30)": {
+          "n": 11326,
+          "roi": 1.1182
+        }
+      },
+      "3": {
+        "MICRO ($1-3)": {
+          "n": 135904,
+          "roi": 1.4088
+        },
+        "LOW ($5-8)": {
+          "n": 39337,
+          "roi": 0.8589
+        },
+        "MID ($15-20)": {
+          "n": 66784,
+          "roi": 1.6467
+        },
+        "HIGH ($25-30)": {
+          "n": 46861,
+          "roi": 1.4417
+        }
+      },
+      "4": {
+        "MICRO ($1-3)": {
+          "n": 114721,
+          "roi": 1.5954
+        },
+        "LOW ($5-8)": {
+          "n": 38728,
+          "roi": 1.9448
+        },
+        "MID ($15-20)": {
+          "n": 57205,
+          "roi": 1.8426
+        },
+        "HIGH ($25-30)": {
+          "n": 39221,
+          "roi": 2.4407
+        }
+      },
+      "5": {
+        "MICRO ($1-3)": {
+          "n": 12423,
+          "roi": 1.8429
+        },
+        "LOW ($5-8)": {
+          "n": 5583,
+          "roi": 2.0379
+        },
+        "MID ($15-20)": {
+          "n": 6514,
+          "roi": 3.0371
+        },
+        "HIGH ($25-30)": {
+          "n": 4851,
+          "roi": 2.9994
+        }
+      },
+      "6": {
+        "MICRO ($1-3)": {
+          "n": 137,
+          "roi": 2.0949
+        },
+        "LOW ($5-8)": {
+          "n": 116,
+          "roi": 0.7381
+        },
+        "MID ($15-20)": {
+          "n": 87,
+          "roi": 1.7037
+        },
+        "HIGH ($25-30)": {
+          "n": 130,
+          "roi": 0.7493
+        }
+      }
+    },
+    "coverage_summary": {
+      "total_lineups_processed": 2271385,
+      "lineups_full_coverage": 649287,
+      "pct_full_coverage": 0.2859,
+      "dates_with_odds": 131,
+      "contests_with_odds": 473,
+      "coverage_distribution": {
+        "0": 18896,
+        "1": 62471,
+        "2": 129615,
+        "3": 297847,
+        "4": 483654,
+        "5": 629615,
+        "6": 649287
+      }
+    }
+  }
+}
