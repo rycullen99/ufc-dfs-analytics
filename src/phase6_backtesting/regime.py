@@ -32,8 +32,9 @@ FEE_LABELS = ["MICRO", "LOW", "MID", "HIGH"]
 # MICRO ($1-3): largest fields, moderate contrarian
 
 # Payout completeness threshold for unbiased ROI
-# Exclude contests where scraped payouts differ >5% from advertised prize pool
-PAYOUT_TOLERANCE = 0.05
+# Exclude contests where scraped payouts differ >6% from advertised prize pool
+# Widened from 5% after lineup resolution pass adjusted some user_counts
+PAYOUT_TOLERANCE = 0.06
 
 # Total ownership bands (sum of 6 fighter ownership percentages)
 TOTAL_OWN_BINS   = [0, 100, 125, 150, 175, 200, float("inf")]

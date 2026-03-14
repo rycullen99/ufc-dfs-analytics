@@ -66,9 +66,15 @@ def load_contests(well_scraped_only: bool = True) -> pd.DataFrame:
     return add_regime_columns(df)
 
 
-def load_lineups(well_scraped_only: bool = True) -> pd.DataFrame:
+def load_lineups(well_scraped_only: bool = True,
+                 complete_only: bool = False) -> pd.DataFrame:
     """
-    Load all lineups joined to contest metadata, with regime columns.
+    Load lineups joined to contest metadata, with regime columns.
+
+    complete_only=True filters to lineups where lineup_hash has no -1
+    (all 6 fighter slots resolved). Default is False to include all lineups
+    for overall ROI calculation (incomplete lineups have correct payout/user_count
+    even though their aggregated columns like total_salary may be partial).
 
     ROI Note: payout / entry_cost is per-lineup. For aggregate ROI, always
     use weighted_roi() which weights by user_count (entries per unique lineup).
@@ -80,6 +86,7 @@ def load_lineups(well_scraped_only: bool = True) -> pd.DataFrame:
         return pd.DataFrame()
 
     placeholders = ",".join("?" * len(contest_ids))
+    complete_filter = "AND l.lineup_hash NOT LIKE '%-1%'" if complete_only else ""
     query = f"""
         SELECT
             l.id              AS lineup_id,
@@ -112,6 +119,7 @@ def load_lineups(well_scraped_only: bool = True) -> pd.DataFrame:
             GROUP BY contest_id
         ) fc ON fc.contest_id = c.contest_id
         WHERE l.contest_id IN ({placeholders})
+          {complete_filter}
     """
     with db_connection(readonly=True) as conn:
         df = pd.read_sql_query(query, conn, params=contest_ids)
