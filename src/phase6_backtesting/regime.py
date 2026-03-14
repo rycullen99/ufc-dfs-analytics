@@ -7,6 +7,8 @@ The $555 Knockout series (LIMITED) has explicit multi_entry_max but incomplete d
 Primary split hierarchy: Slate Size → Field Size → Entry Fee
 """
 
+import re
+
 import pandas as pd
 import numpy as np
 
@@ -42,6 +44,7 @@ SAL_REM_BINS   = [-1, 0, 500, 1000, 2000, float("inf")]
 SAL_REM_LABELS = ["$0 (maxed)", "$1-500", "$500-1K", "$1K-2K", "$2K+"]
 
 # Favorite count per lineup (fighters with >50% implied probability)
+# right=True on these bins: (-1,0]=0, (0,1]=1, ... (5,6]=6
 FAV_COUNT_BINS   = [-1, 0, 1, 2, 3, 4, 5, 6]
 FAV_COUNT_LABELS = ["0", "1", "2", "3", "4", "5", "6"]
 
@@ -57,6 +60,17 @@ OWN_PROB_LABELS = ["<0.50", "0.50-0.75", "0.75-1.0", "1.0-1.25", "1.25+"]
 # Duplication: how many contests the same lineup was entered across
 DUPE_BINS   = [0, 1, 5, 20, 100, float("inf")]
 DUPE_LABELS = ["1 (unique)", "2-5", "6-20", "21-100", "101+"]
+
+# Contest families: recurring DK contest brands with distinct characteristics
+# Regex patterns match contest_name from the contests table
+CONTEST_FAMILY_PATTERNS = [
+    (re.compile(r"mini-MAX", re.IGNORECASE), "mini-MAX"),
+    (re.compile(r"Throwdown", re.IGNORECASE), "Throwdown"),
+    (re.compile(r"Arm Bar", re.IGNORECASE), "Arm Bar"),
+    (re.compile(r"Hook(?!\s*&)", re.IGNORECASE), "Hook"),
+    (re.compile(r"Haymaker", re.IGNORECASE), "Haymaker"),
+    (re.compile(r"Special", re.IGNORECASE), "Special"),
+]
 
 
 def add_regime_columns(df: pd.DataFrame, salary_col: str = "total_salary") -> pd.DataFrame:
@@ -90,7 +104,7 @@ def add_regime_columns(df: pd.DataFrame, salary_col: str = "total_salary") -> pd
 
     if "favorite_count" in df.columns:
         df["fav_count_band"] = pd.cut(
-            df["favorite_count"], bins=FAV_COUNT_BINS, labels=FAV_COUNT_LABELS, right=False
+            df["favorite_count"], bins=FAV_COUNT_BINS, labels=FAV_COUNT_LABELS, right=True
         )
 
     if "implied_prob_sum" in df.columns:
@@ -108,4 +122,17 @@ def add_regime_columns(df: pd.DataFrame, salary_col: str = "total_salary") -> pd
             df["lineup_count"], bins=DUPE_BINS, labels=DUPE_LABELS, right=True
         )
 
+    if "contest_name" in df.columns:
+        df["contest_family"] = df["contest_name"].apply(_classify_contest_family)
+
     return df
+
+
+def _classify_contest_family(name: str) -> str:
+    """Classify a contest name into its family using regex patterns."""
+    if not isinstance(name, str):
+        return "Other"
+    for pattern, family in CONTEST_FAMILY_PATTERNS:
+        if pattern.search(name):
+            return family
+    return "Other"

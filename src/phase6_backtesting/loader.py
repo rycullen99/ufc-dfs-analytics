@@ -102,7 +102,8 @@ def load_lineups(well_scraped_only: bool = True) -> pd.DataFrame:
             c.contest_size,
             fc.fight_count,
             c.total_prizes,
-            c.contest_date
+            c.contest_date,
+            c.contest_name
         FROM lineups l
         JOIN contests c ON c.contest_id = l.contest_id
         LEFT JOIN (
