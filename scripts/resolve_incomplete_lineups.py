@@ -2,17 +2,22 @@
 Resolve incomplete lineups in resultsdb_ufc.db.
 
 FantasyLabs CDN returns -1 for player IDs it can't resolve. This script
-recovers the missing fighter using three resolution methods:
+recovers the missing fighter(s) using resolution methods:
 
+1-MISSING:
 1. SALARY DIFF: total_salary - sum(known fighters' salary) = missing fighter's salary.
    Cross-contest: same lineup_hash in another contest may store the full total.
 2. POINTS + OWNERSHIP + CAP: Derive missing fighter's actual_points and ownership
    from lineup totals minus known fighters. Combined with salary cap constraint,
    this uniquely identifies the fighter.
-3. (Future) 2-missing lineups could use combinatorial matching.
+
+2-MISSING:
+3. COMBINATORIAL PAIR MATCHING: For lineups with exactly 2 missing slots, compute
+   residual (salary, points, ownership) from 4 known fighters. Find candidate pairs
+   from the date's fighter pool where pair sums match all 3 residuals uniquely.
 
 Usage:
-    python resolve_incomplete_lineups.py [--dry-run] [--verbose]
+    python resolve_incomplete_lineups.py [--dry-run] [--verbose] [--skip-2-missing]
 """
 
 import argparse
@@ -160,6 +165,167 @@ def resolve_by_pts_own_cap(hash_data, resolved_already, player_data,
     return resolved
 
 
+def resolve_2_missing(hash_data_2, player_data, contest_dates, date_players,
+                      date_sal_to_players):
+    """Method 3: Combinatorial pair matching for 2-missing lineups.
+
+    For each 2-missing hash, compute the residual salary/points/ownership
+    from the 4 known fighters, then search for a unique pair of fighters
+    whose combined stats match all 3 residuals.
+    """
+    resolved = {}
+
+    for lh, appearances in hash_data_2.items():
+        parts = lh.split(":")
+        known_pids = set(int(p) for p in parts if p != "-1")
+
+        for cid, tsal, lineup_pts, lineup_town in appearances:
+            if not lineup_pts or not lineup_town or not tsal:
+                continue
+
+            # Compute residuals from known 4 fighters
+            known_pts = 0.0
+            known_own = 0.0
+            known_sal = 0
+            all_found = True
+            for pid in known_pids:
+                d = player_data.get((cid, pid))
+                if d:
+                    known_pts += d[0]
+                    known_own += d[1]
+                    known_sal += d[2]
+                else:
+                    all_found = False
+                    break
+
+            if not all_found:
+                continue
+
+            residual_sal = tsal - known_sal
+            residual_pts = round(lineup_pts - known_pts, 2)
+            residual_own = round(lineup_town - known_own, 2)
+
+            # Sanity: residual salary should fit 2 fighters (12000-21200)
+            if not (12000 <= residual_sal <= 21200):
+                continue
+
+            dt = contest_dates.get(cid, "")
+            candidates = []
+            for pid, pts, own, sal in date_players.get(dt, []):
+                if pid in known_pids:
+                    continue
+                if sal <= residual_sal - 6000:  # partner must be >= 6000
+                    candidates.append((pid, pts, own, sal))
+
+            # Use salary-indexed lookup for efficient pair matching
+            matching_pairs = set()
+            for pid_a, pts_a, own_a, sal_a in candidates:
+                need_sal = residual_sal - sal_a
+                if need_sal < 6000 or need_sal > 10600:
+                    continue
+                # Find fighters with exactly this salary on this date
+                partner_pids = date_sal_to_players.get((dt, need_sal), set())
+                partner_pids = partner_pids - known_pids - {pid_a}
+                for pid_b in partner_pids:
+                    d_b = player_data.get((cid, pid_b))
+                    if not d_b:
+                        continue
+                    pts_b, own_b, sal_b = d_b
+                    pair_pts = round(pts_a + pts_b, 2)
+                    pair_own = round(own_a + own_b, 2)
+                    if pair_pts == residual_pts and pair_own == residual_own:
+                        pair = tuple(sorted([pid_a, pid_b]))
+                        matching_pairs.add(pair)
+
+            if len(matching_pairs) == 1:
+                resolved[lh] = matching_pairs.pop()
+                break
+
+    return resolved
+
+
+def apply_fixes_2missing(conn, hash_data, resolution_map, player_data, dry_run=False):
+    """Apply fixes for 2-missing lineups. resolution_map values are (pid_a, pid_b) tuples."""
+    c = conn.cursor()
+    rows_updated = 0
+    rows_merged = 0
+    lp_inserted = 0
+
+    for lh, (pid_a, pid_b) in resolution_map.items():
+        parts = lh.split(":")
+        neg1_indices = [i for i, p in enumerate(parts) if p == "-1"]
+        if len(neg1_indices) != 2:
+            continue
+
+        new_parts = parts.copy()
+        new_parts[neg1_indices[0]] = str(pid_a)
+        new_parts[neg1_indices[1]] = str(pid_b)
+        new_hash = ":".join(new_parts)
+
+        for cid, tsal, pts, town in hash_data[lh]:
+            c.execute(
+                "SELECT id FROM lineups WHERE lineup_hash = ? AND contest_id = ?",
+                (lh, cid),
+            )
+            lineup_ids = [row[0] for row in c.fetchall()]
+
+            for lid in lineup_ids:
+                if dry_run:
+                    rows_updated += 1
+                    lp_inserted += 2
+                    continue
+
+                # Check if resolved hash already exists
+                c.execute(
+                    "SELECT id FROM lineups WHERE lineup_hash = ? AND contest_id = ?",
+                    (new_hash, cid),
+                )
+                existing = c.fetchone()
+                if existing:
+                    c.execute(
+                        "DELETE FROM lineup_players WHERE lineup_id = ?", (lid,)
+                    )
+                    c.execute("DELETE FROM lineups WHERE id = ?", (lid,))
+                    rows_merged += 1
+                    continue
+
+                # Update hash
+                c.execute(
+                    "UPDATE lineups SET lineup_hash = ? WHERE id = ?",
+                    (new_hash, lid),
+                )
+                rows_updated += 1
+
+                # Insert both missing players into lineup_players
+                c.execute(
+                    "SELECT roster_slot FROM lineup_players WHERE lineup_id = ?",
+                    (lid,),
+                )
+                existing_slots = {row[0] for row in c.fetchall()}
+                all_slots = {str(i) for i in range(6)}
+                missing_slots = sorted(all_slots - existing_slots)
+                if len(missing_slots) < 2:
+                    all_slots = {f"F{i}" for i in range(6)}
+                    missing_slots = sorted(all_slots - existing_slots)
+
+                for i, missing_pid in enumerate([pid_a, pid_b]):
+                    slot = missing_slots[i] if i < len(missing_slots) else str(neg1_indices[i])
+                    c.execute(
+                        """INSERT OR IGNORE INTO lineup_players
+                           (lineup_id, player_id, roster_slot) VALUES (?, ?, ?)""",
+                        (lid, missing_pid, slot),
+                    )
+                    lp_inserted += 1
+
+        if rows_updated % 10000 == 0 and rows_updated > 0 and not dry_run:
+            conn.commit()
+
+    if not dry_run:
+        conn.commit()
+
+    return rows_updated, rows_merged, lp_inserted
+
+
 def apply_fixes(conn, hash_data, resolution_map, player_data, dry_run=False):
     """
     Apply fixes to the database:
@@ -270,6 +436,8 @@ def main():
     parser = argparse.ArgumentParser(description="Resolve incomplete UFC DFS lineups")
     parser.add_argument("--dry-run", action="store_true", help="Don't modify database")
     parser.add_argument("--verbose", action="store_true")
+    parser.add_argument("--skip-2-missing", action="store_true",
+                        help="Skip 2-missing combinatorial resolution")
     args = parser.parse_args()
 
     print(f"Database: {DB_PATH}")
@@ -335,6 +503,41 @@ def main():
     print(f"  Lineup rows merged (duplicate removed): {merged:,}")
     print(f"  Lineup_players inserted: {inserted:,}")
     print(f"  Time: {time.time()-t1:.1f}s")
+
+    # ── 2-missing pass ─────────────────────────────────────────────────────
+    if not args.skip_2_missing:
+        print("\n" + "=" * 60)
+        print("PHASE 2: 2-MISSING LINEUP RESOLUTION")
+        print("=" * 60)
+
+        print("\nLoading 2-missing lineups...")
+        raw_2 = load_incomplete_lineups(conn, n_missing=2)
+        print(f"  {len(raw_2):,} lineup rows")
+
+        hash_data_2 = defaultdict(list)
+        for lid, lh, cid, tsal, pts, town in raw_2:
+            hash_data_2[lh].append((cid, tsal or 0, pts or 0, town or 0))
+        print(f"  {len(hash_data_2):,} unique hashes")
+
+        print("\n--- Method 3: Combinatorial Pair Matching ---")
+        t2 = time.time()
+        pair_map = resolve_2_missing(hash_data_2, player_data, contest_dates,
+                                     date_players, date_sal_to_players)
+        pair_rows = sum(len(hash_data_2[lh]) for lh in pair_map)
+        print(f"  Resolved: {len(pair_map):,} hashes ({pair_rows:,} rows)")
+        print(f"  Time: {time.time()-t2:.1f}s")
+
+        print(f"\nApplying 2-missing fixes ({'DRY RUN' if args.dry_run else 'LIVE'})...")
+        t3 = time.time()
+        updated_2, merged_2, inserted_2 = apply_fixes_2missing(
+            conn, hash_data_2, pair_map, player_data, dry_run=args.dry_run
+        )
+        print(f"  Lineup rows updated: {updated_2:,}")
+        print(f"  Lineup rows merged (duplicate removed): {merged_2:,}")
+        print(f"  Lineup_players inserted: {inserted_2:,}")
+        print(f"  Time: {time.time()-t3:.1f}s")
+    else:
+        print("\nSkipping 2-missing resolution (--skip-2-missing)")
 
     # Post-counts
     if not args.dry_run:
