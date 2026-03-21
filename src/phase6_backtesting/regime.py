@@ -62,6 +62,11 @@ OWN_PROB_LABELS = ["<0.50", "0.50-0.75", "0.75-1.0", "1.0-1.25", "1.25+"]
 DUPE_BINS   = [0, 1, 5, 20, 100, float("inf")]
 DUPE_LABELS = ["1 (unique)", "2-5", "6-20", "21-100", "101+"]
 
+# Fight count bands (granular — replaces 3-bucket slate_size for rule derivation)
+# 10-11 merged (7 dates, TIER 2), 15+ merged (7 dates, TIER 2)
+FIGHT_COUNT_BINS   = [0, 11, 12, 13, 14, float("inf")]
+FIGHT_COUNT_LABELS = ["10-11", "12", "13", "14", "15+"]
+
 # Contest families: recurring DK contest brands with distinct characteristics
 # Regex patterns match contest_name from the contests table
 CONTEST_FAMILY_PATTERNS = [
@@ -85,6 +90,11 @@ def add_regime_columns(df: pd.DataFrame, salary_col: str = "total_salary") -> pd
 
     if "fight_count" in df.columns:
         df["slate_size"] = pd.cut(df["fight_count"], bins=SLATE_BINS, labels=SLATE_LABELS, right=True)
+        df["fight_count_band"] = pd.cut(df["fight_count"], bins=FIGHT_COUNT_BINS,
+                                        labels=FIGHT_COUNT_LABELS, right=True)
+
+    if "multi_entry_max" in df.columns:
+        df["contest_archetype"] = df["multi_entry_max"].apply(_classify_archetype)
 
     if "contest_size" in df.columns:
         df["field_size"] = pd.cut(df["contest_size"], bins=FIELD_BINS, labels=FIELD_LABELS, right=True)
@@ -127,6 +137,20 @@ def add_regime_columns(df: pd.DataFrame, salary_col: str = "total_salary") -> pd
         df["contest_family"] = df["contest_name"].apply(_classify_contest_family)
 
     return df
+
+
+def _classify_archetype(max_entries) -> str:
+    """Classify contest by max entry count."""
+    if pd.isna(max_entries):
+        return "UNLIMITED"
+    max_entries = int(max_entries)
+    if max_entries == 1:
+        return "SE"
+    if max_entries <= 20:
+        return "LIMITED"
+    if max_entries <= 150:
+        return "150-Max"
+    return "UNLIMITED"
 
 
 def _classify_contest_family(name: str) -> str:

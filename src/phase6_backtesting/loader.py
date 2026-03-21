@@ -110,7 +110,8 @@ def load_lineups(well_scraped_only: bool = True,
             fc.fight_count,
             c.total_prizes,
             c.contest_date,
-            c.contest_name
+            c.contest_name,
+            c.multi_entry_max
         FROM lineups l
         JOIN contests c ON c.contest_id = l.contest_id
         LEFT JOIN (

@@ -142,6 +142,67 @@ def fav_count_by_family(df: pd.DataFrame) -> pd.DataFrame:
     return favorite_count_by(df, "contest_family")
 
 
+# ─── Fight-count regime analyses ──────────────────────────────────────────────
+
+def _cross_tab(df: pd.DataFrame, regime_col: str, metric_col: str,
+               dropna_col: str = None) -> pd.DataFrame:
+    """Generic cross-tab: ROI by metric_col within each regime_col level."""
+    sub = df.dropna(subset=[dropna_col]) if dropna_col else df
+    results = []
+    for val, g in sub.groupby(regime_col, observed=True):
+        tbl = _roi_table(g, metric_col)
+        tbl.insert(0, regime_col, val)
+        results.append(tbl)
+    return pd.concat(results, ignore_index=True) if results else pd.DataFrame()
+
+
+def fav_count_by_fights(df: pd.DataFrame) -> pd.DataFrame:
+    """ROI by favorite count within each fight count band."""
+    return _cross_tab(df, "fight_count_band", "fav_count_band", "favorite_count")
+
+
+def ownership_by_fights(df: pd.DataFrame) -> pd.DataFrame:
+    """ROI by ownership band within each fight count band."""
+    return _cross_tab(df, "fight_count_band", "total_own_band")
+
+
+def salary_by_fights(df: pd.DataFrame) -> pd.DataFrame:
+    """ROI by salary remaining within each fight count band."""
+    return _cross_tab(df, "fight_count_band", "salary_remaining_band")
+
+
+def duplication_by_fights(df: pd.DataFrame) -> pd.DataFrame:
+    """ROI by duplication within each fight count band."""
+    return _cross_tab(df, "fight_count_band", "dupe_band")
+
+
+def fav_count_by_fights_arch(df: pd.DataFrame) -> pd.DataFrame:
+    """ROI by favorite count within each fight count × archetype combination."""
+    sub = df.dropna(subset=["favorite_count"])
+    if "contest_archetype" not in sub.columns:
+        return pd.DataFrame()
+    results = []
+    for (fc, arch), g in sub.groupby(["fight_count_band", "contest_archetype"], observed=True):
+        tbl = _roi_table(g, "fav_count_band")
+        tbl.insert(0, "fight_count_band", fc)
+        tbl.insert(1, "contest_archetype", arch)
+        results.append(tbl)
+    return pd.concat(results, ignore_index=True) if results else pd.DataFrame()
+
+
+def ownership_by_fights_arch(df: pd.DataFrame) -> pd.DataFrame:
+    """ROI by ownership within each fight count × archetype combination."""
+    if "contest_archetype" not in df.columns:
+        return pd.DataFrame()
+    results = []
+    for (fc, arch), g in df.groupby(["fight_count_band", "contest_archetype"], observed=True):
+        tbl = _roi_table(g, "total_own_band")
+        tbl.insert(0, "fight_count_band", fc)
+        tbl.insert(1, "contest_archetype", arch)
+        results.append(tbl)
+    return pd.concat(results, ignore_index=True) if results else pd.DataFrame()
+
+
 # ─── Runners ──────────────────────────────────────────────────────────────────
 
 def run_all(df: pd.DataFrame) -> dict:
@@ -162,6 +223,13 @@ def run_all(df: pd.DataFrame) -> dict:
         "tossup_count":           tossup_count(df),
         "duplication":            duplication(df),
         "contest_family":         contest_family(df),
+        # Fight-count regime cross-tabs
+        "fav_count_by_fights":      fav_count_by_fights(df),
+        "ownership_by_fights":      ownership_by_fights(df),
+        "salary_by_fights":         salary_by_fights(df),
+        "duplication_by_fights":    duplication_by_fights(df),
+        "fav_count_by_fights_arch": fav_count_by_fights_arch(df),
+        "ownership_by_fights_arch": ownership_by_fights_arch(df),
     }
 
 
