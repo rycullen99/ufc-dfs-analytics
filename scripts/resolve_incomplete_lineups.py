@@ -21,7 +21,7 @@ import time
 from collections import defaultdict
 from pathlib import Path
 
-DB_PATH = Path(__file__).resolve().parent.parent.parent / "Desktop" / "resultsdb_ufc.db"
+DB_PATH = Path(__file__).resolve().parent.parent.parent / "Desktop" / "DFS" / "Databases" / "resultsdb_ufc.db"
 
 
 def load_player_data(conn):

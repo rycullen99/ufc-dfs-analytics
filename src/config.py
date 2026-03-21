@@ -3,7 +3,7 @@
 from pathlib import Path
 
 # ─── Paths ────────────────────────────────────────────────────────────────────
-DB_PATH = Path("/Users/ryancullen/Desktop/resultsdb_ufc.db")
+DB_PATH = Path("/Users/ryancullen/Desktop/DFS/Databases/resultsdb_ufc.db")
 CSV_ODDS_PATH = Path("/Users/ryancullen/projects/fightodds-scraper/ufc_all_odds_2020_plus.csv")
 PROJECT_ROOT = Path(__file__).parent.parent
 REPORTS_DIR = PROJECT_ROOT / "reports"
